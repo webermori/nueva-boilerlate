@@ -1,0 +1,29 @@
+.footer-container {
+    background: #000;
+    color: #FFF; 
+    padding: 20px 0
+}
+ .nueva {
+    position: relative;
+    opacity: .7;
+    float: right;
+    width: 60px; 
+    @include transition();
+        
+    img {
+        width: 60px;
+    }
+    &:before {
+        font-family: verdana;
+        font-size: 11px;
+        position: absolute;
+        top: 4px;
+        left: -104px;
+        content: 'Desenvolvido por';
+        text-transform: lowercase;
+        color: #fff;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}

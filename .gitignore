@@ -1,0 +1,13 @@
+*.map
+.DS_Store
+
+/.phpintel
+/.sass-cache
+
+/node_modules
+/bower_components
+
+/app/@init.php
+/app/admin/@init.php
+
+/app/__logs

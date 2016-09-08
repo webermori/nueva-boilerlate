@@ -1,0 +1,24 @@
+{
+  "name": "copaza",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Agência Nueva"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7",
+    "slick-carousel": "^1.6.0",
+    "lightslider": "^1.1.5",
+    "lightgallery": "^1.2.21"
+  }
+}

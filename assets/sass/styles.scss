@@ -1,0 +1,27 @@
+//Variables
+@import "variables";
+
+//Framework
+@import "bourbon";
+@import "libs/materialize";
+
+//Fonts
+@import "fontello";
+
+//Libs
+
+@import "libs/slick";
+@import "libs/slick-theme";
+@import "libs/animate";
+@import "libs/hover";
+
+//Components
+@import "commons";
+@import "components";
+
+//Structure
+@import "header";
+@import "footer";
+
+//Pages
+@import "page-home";
