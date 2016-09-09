@@ -16,9 +16,13 @@
     "tests"
   ],
   "dependencies": {
-    "materialize": "^0.97.7",
-    "slick-carousel": "^1.6.0",
+    "hover": "^2.0.2",
     "lightslider": "^1.1.5",
-    "lightgallery": "^1.2.21"
+    "lightgallery": "^1.2.21",
+    "materialize": "^0.97.7",
+    "jquery-sticky": "sticky#^1.0.3",
+    "parsleyjs": "^2.4.4",
+    "slick-carousel": "slick.js#^1.6.0",
+    "semantic-ui-sass": "*"
   }
 }

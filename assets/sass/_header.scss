@@ -6,8 +6,7 @@
     padding: 20px 0;
     color: #FFF;
     background: #222;
-    @media #{$min-md} {
-        padding-top: 0;
+    @include min-md {
         border-top: inherit;
        
     }
@@ -20,14 +19,14 @@
         top: 5px;
         float: right;
         color: #222;
-        @media #{$min-md} {
+        @include min-md {
             color: #fff;
         }
     }
 }
 .header__logo-container {
     margin: 0;
-    @media #{$min-md} {
+    @include min-md {
         position: absolute;
         z-index: 20;
         top: 0;
@@ -39,5 +38,14 @@
         padding: 30px 0 0;
         text-align: center;
         background: url('../images/logo-container.png') no-repeat;
+    }
+}
+
+.main-menu {
+    float: right;
+    
+    > li {
+        display: inline-block;
+        margin: 0 10px;
     }
 }

@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-	bourbon = require('node-bourbon').includePaths,
 	sass = require('gulp-sass'),
 	cleanCSS = require('gulp-clean-css'),
 	imagemin = require('gulp-imagemin'),
@@ -26,7 +25,6 @@ gulp.task('styles', function() {
 	      // - or - 
 	      includePaths: require('node-bourbon').includePaths
 	    }).on('error', sass.logError))
-
         .pipe(rename('nva-styles.css'))
         .pipe(gulp.dest('./css'))
         .pipe(livereload());
@@ -67,6 +65,8 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'./bower_components/materialize/dist/js/materialize.min.js',
 		'./bower_components/slick-carousel/slick/slick.min.js',
+		'./bower_components/parsleyjs/dist/parsley.min.js',
+		'./bower_components/parsleyjs/dist/i18n/pt-br.js',
 		'./assets/js/libs/*.js',
 		'./assets/js/app.js' 
 	])

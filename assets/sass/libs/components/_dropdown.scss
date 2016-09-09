@@ -41,7 +41,7 @@
       line-height: 22px;
       padding: (($dropdown-item-height - 22) / 2) 16px;
       
-      @media #{$min-md}{
+      @include min-md {
         line-height: 2;
       padding: 4px 16px;
       }

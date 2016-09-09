@@ -3,7 +3,7 @@
         width: 100%;
         margin-bottom: 20px;
         text-align: center;
-        @media #{$min-md} {
+        @include min-md {
             margin-bottom: 40px;
             border-bottom: 2px solid $color-1;
             background: #111;
@@ -14,7 +14,6 @@
         overflow: hidden;
         max-height: 515px;
         margin-bottom: 0!important;
-
         .inner {
             position: relative;
             left: 50%;
@@ -22,9 +21,7 @@
             display: block;
             max-width: inherit;
             @include transform(translate(-50%, 0));
-
             background: #f00;
-
             img {
                 display: block;
             }

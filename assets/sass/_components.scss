@@ -73,7 +73,7 @@
 //Redes Sociais
 .social {
     margin: 15px 0 0;
-    @media #{$min-md} {
+    @include min-md {
         float: right;
     }
     .social-heading {
@@ -133,14 +133,7 @@
         }
     }
 }
-.parsley-errors-list {
-    font-size: 11px;
-    margin: -5px 0 0;
-    color: $color-1;
-}
-.form-action {
-    margin-top: 20px;
-}
+
 .breadcrumbs {
     margin: 0 0 10px;
     > li {

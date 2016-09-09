@@ -1,13 +1,23 @@
 <div class="header-container">
 	<div class="container">
-		<div class="row">
-			<div class="col m12">
-				Logo
+		<header class="header">
+			<div class="row">
+				<div class="col s24 m6">
+					<h1 class="header__title"><a href="#" title="Nueva - Página inicial">Nueva</a></h1>
+				</div>
+				
+				<div class="col s24 m18">
+					<nav class="main-menu-container hide-on-med-and-down">
+						<ul id="main-menu" class="main-menu">
+							<?php include "./inc/menu_itens.php" ?>
+						</ul>
+					</nav>
+				
+					<a href="#" data-activates="slide-out" class="hide-on-large-only button-collapse"><b class="visually-hidden">Abrir menu</b><i class="icon-menu"></i></a>
+				</div>
 			</div>
-			
-			<div class="col m12">
-				<a href="#produtos" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="icon-menu">Menu Mobile</i></a>
-			</div>
-		</div>
+		</header>
 	</div>
 </div>
+
+

@@ -1,0 +1,79 @@
+//Breakpoints
+@mixin min-md {
+    @media only screen and (min-width: 601px) {
+        @content;
+    }
+}
+
+@mixin min-lg {
+    @media only screen and (min-width: 993px) {
+        @content;
+    }
+}
+
+@mixin max-sm {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin max-md {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+//Images
+$image-path: '../images' !default;
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+@mixin background-image($name, $size:false){
+    background-image: url(#{$image-path}/#{$name}.svg);
+    @if($size){
+        background-size: $size;
+    }
+    .no-svg &{
+        background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
+
+        @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+        }
+    }
+}
+//Fonts
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+//Visually hide an element
+%visuallyhidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+@mixin center {
+    display: table!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center!important;
+}
+
+@mixin center-max-sm {
+    @include max-md {
+        display: table!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        text-align: center!important;
+    }
+}
