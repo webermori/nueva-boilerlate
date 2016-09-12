@@ -17,24 +17,21 @@
         .inner {
             position: relative;
             left: 50%;
-            max-width: 1440px !important;
             display: block;
+            max-width: 1440px !important;
             max-width: inherit;
-            @include transform(translate(-50%, 0));
             background: #f00;
+            @include transform(translate(-50%, 0));
             img {
                 display: block;
             }
-
             @media (max-width: 1440px) {
                 width: 146%;
             }
         }
-
         .slick-list {
             padding: 0;
         }
-
         .container {
             position: relative;
             .slick-dots {

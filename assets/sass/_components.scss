@@ -5,6 +5,7 @@
         @include filter(saturate(170%));
     }
 }
+
 //Banner Responsivo
 .responsive-banner {
     position: relative;
@@ -30,6 +31,7 @@
         }
     }
 }
+
 //Lista de endereço e telefone
 .address-list {
     li {
@@ -49,6 +51,7 @@
         }
     }
 }
+
 //Título personalizado
 .page__title-box {
     position: relative;
@@ -67,9 +70,11 @@
         background: #fff;
     }
 }
+
 .page__desc {
     margin-bottom: 40px;
 }
+
 //Redes Sociais
 .social {
     margin: 15px 0 0;
@@ -96,6 +101,7 @@
         }
     }
 }
+
 //Bloco de Atendimento
 .attendance {
     margin-bottom: 40px;
@@ -157,6 +163,7 @@
         }
     }
 }
+
 .pagination {
     float: right;
     margin: 0 0 10px;
@@ -181,6 +188,7 @@
         }
     }
 }
+
 //Menu sanfona em produtos
 .collapsible-custom {
     padding: 0;
@@ -219,6 +227,7 @@
         }
     }
 }
+
 //Matéria Prima
 .filter-feedstock {
     li {

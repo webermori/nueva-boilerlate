@@ -1,16 +1,17 @@
 /* Header */
+
 .header-container {
     position: relative;
     z-index: 10;
     min-height: 80px;
     padding: 20px 0;
-    color: #FFF;
+    color: #fff;
     background: #222;
     @include min-md {
         border-top: inherit;
-       
     }
 }
+
 .header {
     position: relative;
     .button-collapse {
@@ -24,6 +25,7 @@
         }
     }
 }
+
 .header__logo-container {
     margin: 0;
     @include min-md {
@@ -43,7 +45,6 @@
 
 .main-menu {
     float: right;
-    
     > li {
         display: inline-block;
         margin: 0 10px;
