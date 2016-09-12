@@ -3,7 +3,7 @@
 		<header class="header">
 			<div class="row">
 				<div class="col s24 m6">
-					<h1 class="header__title"><a href="#" title="Nueva - Página inicial">Nueva</a></h1>
+					<h1 class="header__title"><a href="./index.php" title="Nueva - Página inicial">Nueva</a></h1>
 				</div>
 				
 				<div class="col s24 m18">

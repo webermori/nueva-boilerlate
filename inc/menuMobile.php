@@ -8,11 +8,11 @@
 					<a class="collapsible-header waves-effect">Produtos <i class="icon-down-open-big"></i></a>
 					<div class="collapsible-body">
 						<ul>
-							<li>Produto 01</li>
+							<li><a href="#">Produto 01</a></li>
 							<li><div class="divider"></div></li>
-							<li>Produto 02</li>
+							<li><a href="#">Produto 02</a></li>
 							<li><div class="divider"></div></li>
-							<li>Produto 03</li>
+							<li><a href="#">Produto 03</a></li>
 							<li><div class="divider"></div></li>
 						</ul>
 					</div>
