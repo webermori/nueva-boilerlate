@@ -29,6 +29,9 @@
                             <textarea name="mensagem" id="formContact_mensagem" placeholder="Mensagem *" class="materialize-textarea" required title="Digite sua mensagem"></textarea>
                            
                         </div>
+
+                            <div class="g-recaptcha" data-sitekey="6LfB1CkTAAAAAI7YiOfbp4sVpNagTz02s6xx9Ptn"></div>
+
                         <div class="field">
                             <input type="submit" value="Enviar" class="btn">
                         </div>
@@ -38,3 +41,5 @@
 		</div>
 	</div>
 </main>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>

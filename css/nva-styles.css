@@ -1,60 +1,141 @@
 @charset "UTF-8";
 .visually-hidden {
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
+  position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
   clip: rect(0, 0, 0, 0);
-  position: absolute; }
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font: inherit;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  border: 0; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none; }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+  border-collapse: collapse; }
 
 .materialize-red {
   background-color: #e51c23 !important; }
@@ -10000,7 +10081,10 @@ body {
   line-height: 1.3;
   min-width: 300px; }
 
-*, *:before, *:after, input[type='search'] {
+*,
+*:before,
+*:after,
+input[type='search'] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -10035,8 +10119,8 @@ img {
     background: #1ABC9C; }
 
 .main {
-  padding: 30px 0 80px;
-  min-height: 550px; }
+  min-height: 550px;
+  padding: 30px 0 80px; }
 
 .page-banner {
   background: #111; }
@@ -10276,7 +10360,7 @@ img {
   z-index: 10;
   min-height: 80px;
   padding: 20px 0;
-  color: #FFF;
+  color: #fff;
   background: #222; }
   @media only screen and (min-width: 601px) {
     .header-container {
@@ -10335,8 +10419,8 @@ img {
     .footer .copyrights {
       margin: 10px 0;
       display: table !important;
-      margin-left: auto !important;
       margin-right: auto !important;
+      margin-left: auto !important;
       text-align: center !important; } }
 
 .footer .nueva {
@@ -10384,15 +10468,15 @@ img {
   .home .slider-home .inner {
     position: relative;
     left: 50%;
-    max-width: 1440px !important;
     display: block;
+    max-width: 1440px !important;
     max-width: inherit;
+    background: #f00;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    background: #f00; }
+    transform: translate(-50%, 0); }
     .home .slider-home .inner img {
       display: block; }
     @media (max-width: 1440px) {
@@ -10425,3 +10509,6 @@ img {
                         background: $color-1;
                     }
                 } */ }
+
+.g-recaptcha {
+  margin-bottom: 10px; }
