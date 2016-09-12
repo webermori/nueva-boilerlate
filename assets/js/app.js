@@ -6,6 +6,7 @@ var nuevaJS = (function() {
 			slick();
 			googleMap();
 			materialize();
+			semanticUi();
 			valida();
 			general();
 		});
@@ -18,11 +19,15 @@ var nuevaJS = (function() {
 			closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
 		});
 
-		$('.materialize-select select').material_select();
+		//$('.materialize-select select').material_select();
 		
 		$('.collapsible').collapsible({
 			accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
 		});
+	}
+
+	function semanticUi () {
+		$('.ui.dropdown').dropdown();
 	}
 
 	function googleMap() {

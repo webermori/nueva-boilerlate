@@ -20,17 +20,30 @@
                             <input name="telefone" placeholder="Telefone" id="formContact_telefone" type="text" class="validate" title="Digite seu telefone">
                            
                         </div>
-                        <div class="field">
-                            <label for="formContact_assunto" class="hide">Assunto</label>
-                            <input name="assunto" placeholder="Assunto *" id="formContact_assunto" type="text" class="validate" required title="Digite o assunto da mensagem">
+                        
+
+                        <div class="two fields">
+                            <div class="field">
+                                <label for="formContact_assunto" class="hide">Assunto</label>
+                                <input name="assunto" placeholder="Assunto *" id="formContact_assunto" type="text" class="validate" required title="Digite o assunto da mensagem">
+                            </div>
+
+                            <div class="field">
+                                <label class="hide">State</label>
+                                <select class="ui fluid dropdown">
+                                    <option value="">State</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                </select>
+                            </div>
                         </div>
+
                         <div class="field">
                             <label for="formContact_mensagem" class="hide">Mensagem</label>
                             <textarea name="mensagem" id="formContact_mensagem" placeholder="Mensagem *" class="materialize-textarea" required title="Digite sua mensagem"></textarea>
-                           
                         </div>
 
-                            <div class="g-recaptcha" data-sitekey="6LfB1CkTAAAAAI7YiOfbp4sVpNagTz02s6xx9Ptn"></div>
+                        <div class="g-recaptcha" data-sitekey="6LfB1CkTAAAAAI7YiOfbp4sVpNagTz02s6xx9Ptn"></div>
 
                         <div class="field">
                             <input type="submit" value="Enviar" class="btn">

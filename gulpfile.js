@@ -63,6 +63,7 @@ gulp.task('lint', function() {
 //Concatena Scripts
 gulp.task('scripts', function() {
 	return gulp.src([
+		//'./bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
 		'./bower_components/materialize/js/initial.js',
 		'./bower_components/materialize/js/jquery.easing.1.3.js',
 		'./bower_components/materialize/js/global.js',
