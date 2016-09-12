@@ -14,12 +14,16 @@
 
 .header {
     position: relative;
+
+    .header__title {
+        display: inline-block;
+        margin: 0;
+    }
     .button-collapse {
         font-size: 28px;
         position: relative;
         top: 5px;
         float: right;
-        color: #222;
         @include min-md {
             color: #fff;
         }

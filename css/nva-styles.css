@@ -10372,12 +10372,14 @@ img {
 
 .header {
   position: relative; }
+  .header .header__title {
+    display: inline-block;
+    margin: 0; }
   .header .button-collapse {
     font-size: 28px;
     position: relative;
     top: 5px;
-    float: right;
-    color: #222; }
+    float: right; }
     @media only screen and (min-width: 601px) {
       .header .button-collapse {
         color: #fff; } }
