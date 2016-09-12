@@ -1,7 +1,7 @@
 <nav>
 	<ul id="slide-out" class="side-nav">
-		<li><a href="#">Início</a></li>
-		<li><a href="#">Quem somos</a></li>
+		<li><a href="./index.php">Início</a></li>
+		<li><a href="./page.php">Quem somos</a></li>
 		<li>
 			<ul class="collapsible collapsible-accordion">
 				<li>
@@ -19,7 +19,7 @@
 				</li>
 			</ul>
 		</li>
-		<li><a href="#">Fale conosco</a></li>
+		<li><a href="./contato.php">Fale conosco</a></li>
 	</ul>
 </nav>
 
