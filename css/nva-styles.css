@@ -12681,7 +12681,6 @@ img {
     display: block;
     max-width: 1440px !important;
     max-width: inherit;
-    background: #f00;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);

@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#3C1856">
     <meta name="apple-mobile-web-app-status-bar-style" content="#3C1856">
     <meta name="msapplication-navbutton-color" content="#3C1856">
+    <meta name="author" content="http://www.agencianueva.com.br">
 
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 

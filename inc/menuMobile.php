@@ -1,7 +1,7 @@
 <nav>
 	<ul id="slide-out" class="side-nav">
 		<li><a href="./index.php">Início</a></li>
-		<li><a href="./page.php">Quem somos</a></li>
+		<li><a href="./pagina.php">Quem somos</a></li>
 		<li>
 			<ul class="collapsible collapsible-accordion">
 				<li>
