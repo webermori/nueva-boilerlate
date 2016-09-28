@@ -1,0 +1,68 @@
+############################## CONFIGURAÇÕES GERAIS ##################################
+
+###################################### REWRITES ######################################
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^galeriara\.com\.br
+RewriteRule ^(.*)$ http://www.galeriara.com.br/$1 [R=301,L]
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+###################################### CACHE ######################################
+#Expires
+#1 ANO
+<FilesMatch "\.(ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+#1 SEMANA
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|svg)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+#1 SEMANA
+<FilesMatch "\.(xml|txt|css|js)$">
+Header set Cache-Control "max-age=604800, proxy-revalidate"
+</FilesMatch>
+#60 MINUTOS
+<FilesMatch "\.(json)$">
+Header set Cache-Control "max-age=60, private, proxy-revalidate"
+</FilesMatch>
+#1 MINUTO
+#<FilesMatch "\.(html|htm|php)$">
+#Header set Cache-Control "max-age=1, private, proxy-revalidate"
+#</FilesMatch>
+Header unset Etag
+FileETag None
+
+#Compactar Arquivos PHP e HTML
+<FilesMatch "\.(php|html|js|css|svg?)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+#ExpiresByType text/html "access plus 1 seconds"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/image/svg+xml "access plus 1 year"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+
+ExpiresByType font/otf "access plus 1 year"
+ExpiresByType application/font-otf "access plus 1 year"
+ExpiresByType application/font "access plus 1 year"
+ExpiresByType application/otf "access plus 1 year"
+ExpiresByType application/octet-stream "access plus 1 year"
+ExpiresByType application/x-font-otf "access plus 1 year"
+ExpiresByType application/x-font-woff "access plus 1 year"
+ExpiresByType application/x-font-ttf "access plus 1 year"
+
+ExpiresDefault "access plus 2 days"
+</IfModule>
+
+Header unset Etag
+FileETag None

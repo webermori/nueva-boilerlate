@@ -1,3 +1,6 @@
+<?php
+require "@init.php";
+?>
 <!doctype html>
 <html lang="pt-BR">
     <?php include "head.php" ?>   
