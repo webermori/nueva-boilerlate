@@ -8,7 +8,7 @@
     <?php include "inc/ld_json.php" ?>
     <?php include "inc/mobile_browser_style.php" ?>
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 

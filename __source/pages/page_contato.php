@@ -9,15 +9,15 @@
 
                         <div class="field">
                             <label for="formContact_nome" class="hide">Nome</label>
-                            <input name="nome" placeholder="Nome *" id="formContact_nome" type="text" class="validate" required title="Digite seu nome">
+                            <input name="nome" placeholder="Nome *" id="formContact_nome" type="text" class="validate" required title="Digite seu nome" maxlength="50">
                         </div>
                         <div class="field">
                             <label for="formContact_email" class="hide">E-mail</label>
-                            <input name="email" placeholder="E-mail *" id="formContact_email" type="email" class="validate" required title="Digite seu e-mail">
+                            <input name="email" placeholder="E-mail *" id="formContact_email" type="email" class="validate" required title="Digite seu e-mail" maxlength="50">
                         </div>
                         <div class="field">
                             <label for="formContact_telefone" class="hide">Telefone</label>
-                            <input name="telefone" placeholder="Telefone" id="formContact_telefone" type="text" class="validate" title="Digite seu telefone">
+                            <input name="telefone" placeholder="Telefone" id="formContact_telefone" type="text" class="validate" title="Digite seu telefone" maxlength="20">
                            
                         </div>
                         
@@ -25,7 +25,7 @@
                         <div class="two fields">
                             <div class="field">
                                 <label for="formContact_assunto" class="hide">Assunto</label>
-                                <input name="assunto" placeholder="Assunto *" id="formContact_assunto" type="text" class="validate" required title="Digite o assunto da mensagem">
+                                <input name="assunto" placeholder="Assunto *" id="formContact_assunto" type="text" class="validate" required title="Digite o assunto da mensagem" maxlength="50">
                             </div>
 
                             <div class="field">
@@ -40,7 +40,7 @@
 
                         <div class="field">
                             <label for="formContact_mensagem" class="hide">Mensagem</label>
-                            <textarea name="mensagem" id="formContact_mensagem" placeholder="Mensagem *" class="materialize-textarea" required title="Digite sua mensagem"></textarea>
+                            <textarea name="mensagem" id="formContact_mensagem" placeholder="Mensagem *" class="materialize-textarea" required title="Digite sua mensagem" maxlength="1000"></textarea>
                         </div>
 
                         <div class="g-recaptcha" data-sitekey="6LfB1CkTAAAAAI7YiOfbp4sVpNagTz02s6xx9Ptn"></div>

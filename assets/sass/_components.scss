@@ -32,49 +32,6 @@
     }
 }
 
-//Lista de endereço e telefone
-.address-list {
-    li {
-        position: relative;
-        margin-bottom: 10px;
-        padding-left: 35px;
-        i {
-            font-size: 20px;
-            position: absolute;
-            top: -3px;
-            left: 0;
-            color: $color-1;
-        }
-        &.address-list__tel {
-            font-size: 14px;
-            font-weight: 600;
-        }
-    }
-}
-
-//Título personalizado
-.page__title-box {
-    position: relative;
-    margin-bottom: 30px;
-    border-bottom: 1px solid $color-1;
-    .page__title {
-        font-size: 18px;
-        font-weight: 600;
-        position: relative;
-        bottom: -9px;
-        display: inline-block;
-        margin: 0;
-        padding: 0 10px 0 0;
-        text-transform: uppercase;
-        color: $color-1;
-        background: #fff;
-    }
-}
-
-.page__desc {
-    margin-bottom: 40px;
-}
-
 //Redes Sociais
 .social {
     margin: 15px 0 0;
@@ -102,156 +59,44 @@
     }
 }
 
-//Bloco de Atendimento
-.attendance {
-    margin-bottom: 40px;
-    .address-list li {
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #ccc;
-        &:first-child {
-            font-size: 16px;
-            font-weight: 700;
-            i {
-                font-size: 20px;
-                position: absolute;
-                top: -3px;
-                left: 0;
-            }
-        }
+//Facebook Custom Page
+.custom-face-page {
+    position: relative;
+    padding-left: 80px;
+    @include min-lg {
+        float: right;
     }
-    .attendance__title {
-        font-size: 13px;
-        font-weight: 400;
+    i {
+        position: absolute;
+        top: 3px;
+        left: 0;
     }
-    .address-list {
-        margin: 0;
-    }
-    .social {
-        float: none;
-        margin: 0 0 40px;
-        li {
-            &:first-child {
-                font-weight: 400;
-                display: block;
-                margin-bottom: 5px;
-            }
-        }
-    }
-}
-
-.breadcrumbs {
-    margin: 0 0 10px;
-    > li {
-        font-size: 12px;
-        display: inline-block;
-        &:last-child {
-            font-weight: 600;
-            &:after {
-                content: '';
-            }
-        }
-        &:after {
-            padding: 0 2px 0 7px;
-            content: '/';
-        }
-        a {
-            font-size: 12px;
-            &:hover {
-                @extend .link;
-            }
-        }
-    }
-}
-
-.pagination {
-    float: right;
-    margin: 0 0 10px;
-    li {
-        font-size: inherit;
-        line-height: 1.6;
-        padding: 0;
-        border-radius: 50%;
-        a {
-            font-size: 12px;
-            font-weight: 400;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
-        i {
-            font-size: 20px;
-            line-height: inherit;
-            &:before {
-                font-size: 20px;
-            }
-        }
-    }
-}
-
-//Menu sanfona em produtos
-.collapsible-custom {
-    padding: 0;
-    color: #fff;
-    li {
-        margin-bottom: 5px;
-    }
-    &.collapsible {
-        border: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    .collapsible-header {
-        line-height: 1.3;
-        min-height: 20px;
-        padding: 6px 15px;
-        border-radius: 20px;
-        &:hover {
-            @include filter(saturate(150%));
-        }
-    }
-    .collapsible-body {
-        margin: 0;
-        padding: 10px 15px;
-        border-bottom: none;
-        li {
-            display: block;
-            margin-bottom: 10px;
-            a {
-                display: block;
-                @include transition();
-                &:hover {
-                    text-indent: 5px;
-                }
-            }
-        }
-    }
-}
-
-//Matéria Prima
-.filter-feedstock {
-    li {
+    .custom-face-page__head {
         margin-bottom: 10px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-        a {
-            &:hover {
-                color: $color-1;
-            }
-        }
     }
-    .feedstock {
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 1.8;
+    .custom-face-page__title {
+        font-size: 22px;
         display: inline-block;
-        width: 24px;
-        height: 24px;
-        padding: 2px;
-        text-indent: 3px;
         color: #fff;
-        border-radius: 50%;
-        background: #666;
+    }
+    .custom-face-page__like-btn {
+        display: inline-block;
+        overflow: hidden;
+        width: 60px;
+        margin-left: 10px;
+    }
+    .custom-face-page__fb-page {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 406px;
+        height: 32px;
+        .fb-page {
+            position: absolute;
+            top: -105px;
+            left: -17px;
+            overflow: hidden;
+            width: 456px;
+        }
     }
 }

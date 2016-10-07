@@ -5,7 +5,20 @@
             	Teste
             </div>
             <div class="col s24 m8 l8">
-            	Teste
+            	<div class="custom-face-page">
+                    <a href="https://www.facebook.com/RenaultVipcar" target="_blank" title="Adicione-nos no Facebook"><i class="icon-facebook"></i></a>
+                    <div class="custom-face-page__head">
+                        <h4 class="custom-face-page__title">Nueva no Facebook</h4>
+
+                        <div class="custom-face-page__like-btn">
+                            <div class="fb-like" data-href="https://www.facebook.com/RenaultVipcar/" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                        </div>
+                    </div>                    
+
+                    <div class="custom-face-page__fb-page">
+                         <div class="fb-page" data-href="https://www.facebook.com/RenaultVipcar/" data-small-header="true" data-adapt-container-width="auto" data width="500" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/RenaultVipcar/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/RenaultVipcar/">Nueva</a></blockquote></div>
+                    </div>
+                </div>
             </div>
             <div class="col s24 m8 l8">
             	<ul class="social">
