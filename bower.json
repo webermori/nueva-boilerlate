@@ -26,5 +26,8 @@
     "semantic-ui-sass": "*",
     "tooltipster": "^4.1.5",
     "html5-boilerplate": "^5.3.0"
+  },
+  "devDependencies": {
+    "bootstrap": "v4.0.0-alpha.5"
   }
 }

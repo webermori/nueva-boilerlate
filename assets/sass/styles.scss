@@ -5,19 +5,19 @@
 //Fonts
 @import "reset";
 
-//Framework
-@import "bourbon";
-@import "libs/materialize";
-@import "libs/semantic-ui";
-
 //Fonts
 @import "fontello";
 
+//Framework
+@import "bourbon";
+@import "libs/bootstrap";
+@import "libs/materialize";
+@import "libs/semantic-ui";
+
 //Libs
-@import "libs/slick";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
 @import "libs/slick-theme";
-@import "libs/animate";
-@import "libs/hover";
+// @import "libs/hover";
 
 //Components
 @import "commons";

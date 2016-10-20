@@ -74,7 +74,7 @@ gulp.task('lint', function() {
 //Concatena Scripts
 gulp.task('scripts', function() {
 	return gulp.src([
-			//'./bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
+			'./bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
 			'./bower_components/materialize/js/initial.js',
 			'./bower_components/materialize/js/jquery.easing.1.3.js',
 			'./bower_components/materialize/js/global.js',
@@ -141,16 +141,19 @@ gulp.task('cleanImg', function() {
 });
 
 gulp.task('cleanCss', function() {
-	return gulp.src('./css', {
-			read: false
-		})
+	return gulp.src('./css')
 		.pipe(clean());
 });
+
 gulp.task('cleanJs', function() {
 	return gulp.src('./js', {
 			read: false
 		})
 		.pipe(clean());
+});
+
+gulp.task('cleanAll', function() {
+	gulp.start('cleanCss', 'cleanJs', 'cleanImg');
 });
 
 //Watch
@@ -168,7 +171,7 @@ gulp.task('watch', function() {
 	gulp.watch(['./assets/sass/**/*.scss'], ['styles']);
 
 	//Js
-	gulp.watch(['./assets/js/libs/*.js', './assets/js/app.js'], ['lint', 'scripts']);
+	//gulp.watch(['./assets/js/libs/*.js', './assets/js/app.js'], ['lint', 'scripts']);
 });
 
 //Tasks
@@ -185,6 +188,10 @@ gulp.task('bs', function(callback) {
 	runSequence('default', 'browserSync', callback);
 });
 
-gulp.task('default', function(callback) {
-	runSequence('cleanCss', ['lint', 'jsVendor', 'scripts', 'styles', 'imagemin'], 'watch', callback);
+gulp.task('build', function(callback) {
+	runSequence( ['lint', 'jsVendor', 'scripts', 'styles', 'imagemin'], 'watch', callback);
+});
+
+gulp.task('default', function() {
+    gulp.start('build');
 });

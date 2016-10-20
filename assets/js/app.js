@@ -236,7 +236,6 @@ var nuevaJS = (function() {
 		$('.home').find('.header__logo-container').addClass('fadeInDown animated');		
 		$('.slider-home').find('.slick-dots').wrap('<div class="container"></div>');
 	}
-
 	return {
 		init: init
 	};

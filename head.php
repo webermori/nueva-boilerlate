@@ -3,10 +3,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <?php include "inc/seo_tags.php" ?>
-    <?php include "inc/open_graph.php" ?>
-    <?php include "inc/ld_json.php" ?>
-    <?php include "inc/mobile_browser_style.php" ?>
+    <?php include "inc/head/seo_tags.php" ?>
+    <?php include "inc/head/open_graph.php" ?>
+    <?php include "inc/head/ld_json.php" ?>
+    <?php include "inc/head/mobile_browser_style.php" ?>
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
 

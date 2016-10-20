@@ -4,7 +4,7 @@ require "@init.php";
 <!doctype html>
 <html lang="pt-BR">
     <?php include "head.php" ?>   
-    <body>
+    <body class="pusher">
         <?php include "header.php" ?>
         <?php include "__source/pages/page_home.php" ?>
         <?php include "footer.php" ?>

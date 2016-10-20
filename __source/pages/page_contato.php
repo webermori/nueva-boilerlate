@@ -1,8 +1,8 @@
 <main class="contact main">
 	<div class="container">
 		<div class="row">
-			<div class="col s24 m12">Left</div>
-			<div class="col s24 m12">
+			<div class="col-md-12">Left</div>
+			<div class="col-md-12">
 				<div class="container-contact-form">
                     <form action="contato" data-ajax-action="contato-ajax" method="post" id="formContact" class="ui form contact-form">
                         <input type="hidden" name="contato_enviado" value="sim">
