@@ -3,8 +3,8 @@
 ###################################### REWRITES ######################################
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^galeriara\.com\.br
-RewriteRule ^(.*)$ http://www.galeriara.com.br/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^nueva-boilerplate\.com\.br
+RewriteRule ^(.*)$ http://www.nueva-boilerplate.com.br/$1 [R=301,L]
 
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d

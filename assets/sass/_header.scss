@@ -19,7 +19,7 @@
         display: inline-block;
         margin: 0;
     }
-    .button-collapse {
+    .menu-btn {
         font-size: 28px;
         position: relative;
         top: 5px;
@@ -47,6 +47,9 @@
     }
 }
 
+.main-menu-container {
+    @extend .hidden-md-down;
+}
 .main-menu {
     float: right;
     > li {
