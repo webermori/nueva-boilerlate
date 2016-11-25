@@ -1,6 +1,5 @@
 /* Header */
-
-.header-container {
+.header {
     position: relative;
     z-index: 10;
     min-height: 80px;
@@ -10,10 +9,6 @@
     @include min-md {
         border-top: inherit;
     }
-}
-
-.header {
-    position: relative;
 
     .header__title {
         display: inline-block;

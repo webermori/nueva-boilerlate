@@ -1,6 +1,6 @@
-<div class="header-container">
+<div class="header">
 	<div class="container">
-		<header class="header">
+		<header>
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
 					<h1 class="header__title"><a href="./index.php" title="Nueva - Página inicial">Nueva</a></h1>
@@ -15,7 +15,7 @@
 						</ul>
 					</nav>
 
-					<div class="menu-btn hidden-md-up">&#9776;</div>
+					<div class="menu-btn hidden-lg-up">&#9776;</div>
 
 				</div>
 			</div>

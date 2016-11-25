@@ -79,6 +79,7 @@ gulp.task('scripts', function() {
 			'./bower_components/slick-carousel/slick/slick.min.js',
 			'./bower_components/parsleyjs/dist/parsley.min.js',
 			'./bower_components/parsleyjs/dist/i18n/pt-br.js',
+			'./bower_components/sticky-kit/jquery.sticky-kit.min.js',
 			'./assets/js/app.js'
 		])
 		.pipe(concat('nva-applications.js'))

@@ -9494,7 +9494,7 @@ img {
       width: 456px; }
 
 /* Header */
-.header-container {
+.header {
   position: relative;
   z-index: 10;
   min-height: 80px;
@@ -9502,11 +9502,8 @@ img {
   color: #fff;
   background: #222; }
   @media only screen and (min-width: 601px) {
-    .header-container {
+    .header {
       border-top: inherit; } }
-
-.header {
-  position: relative; }
   .header .header__title {
     display: inline-block;
     margin: 0; }

@@ -218,6 +218,8 @@ var nuevaJS = (function() {
 	}
 	
 	function general() {
+		//Topo fixo
+		$(".header").stick_in_parent();
 		$('.home').find('.header__logo-container').addClass('fadeInDown animated');		
 		$('.slider-home').find('.slick-dots').wrap('<div class="container"></div>');
 	}
