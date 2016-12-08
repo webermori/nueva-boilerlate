@@ -129,14 +129,14 @@ gulp.task('cleanAll', function() {
 
 //Watch
 gulp.task('watch', function() {
-	livereload.listen();
-	browserSync.reload();
+	//livereload.listen();
+	//browserSync.reload();
 
 	//Gulpfile
 	gulp.watch(['./gulpfile.js'], ['default']);
 
 	//PHP
-	gulp.watch('./*.php', livereload.reload);
+	gulp.watch(['./*.php', './__source/**/*.php'], livereload.reload);
 
 	//CSS
 	gulp.watch(['./assets/sass/**/*.scss'], ['styles']);
@@ -163,6 +163,10 @@ gulp.task('build', function(callback) {
 	runSequence( ['lint', 'jsVendor', 'scripts', 'styles', 'imagemin'], 'watch', callback);
 });
 
+gulp.task('build-css', function(callback) {
+	runSequence( ['styles'], 'watch', callback);
+});
+
 gulp.task('default', function() {
-    gulp.start('build');
+    gulp.start('build-css');
 });
