@@ -1,4 +1,4 @@
-var nuevaJS = (function() {
+var app = (function() {
 	'use strict';
 
 	function init() {
@@ -230,5 +230,5 @@ var nuevaJS = (function() {
 }());
 
 (function() {
-	nuevaJS.init();
+	app.init();
 }());

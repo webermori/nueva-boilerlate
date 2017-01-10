@@ -3,6 +3,7 @@
 
 /.phpintel
 /.sass-cache
+/.temp
 
 /node_modules
 /bower_components

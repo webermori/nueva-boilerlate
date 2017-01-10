@@ -7,7 +7,10 @@
 	<main class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">Left</div>
+				<div class="col-md-12">
+					<i class="icon icon-nueva"></i>
+					<i class="icon icon-1"></i>
+				</div>
 				<div class="col-md-12">Right</div>
 			</div>
 		</div>

@@ -21,7 +21,7 @@ if (!(version_compare(phpversion(), "5.4.0", ">="))) {
 //error_reporting(0); //No ambiente de produção, desativar a exibição de erros para dificultar possíveis ataques
 
 //DEFINE CONSTANTES ESSENCIAIS
-define("BASEPATH", "http://192.168.1.108/nueva-boilerplate/");
+define("BASEPATH", "http://localhost/nueva-boilerplate/");
 
 define("CONFIG_AVISO_ERROS", false);
 define("CONFIG_EMAIL_ADMINISTRADOR", "weber@agencianueva.com.br");
