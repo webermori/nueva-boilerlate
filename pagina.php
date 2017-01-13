@@ -9,6 +9,5 @@ require "@init.php";
         <?php include "__source/pages/page_page.php" ?>
         <?php include "_footer.php" ?>
         <?php include "inc/menuMobile.php" ?>
-        <?php include "inc/scripts.php" ?>
     </body>
 </html>

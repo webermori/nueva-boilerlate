@@ -1,4 +1,4 @@
-<main class="contact main">
+<main data-page="controller" data-custom-js="contato" class="contact main">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">Left</div>
@@ -54,5 +54,3 @@
 		</div>
 	</div>
 </main>
-
-<script src='https://www.google.com/recaptcha/api.js'></script>

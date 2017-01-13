@@ -16,6 +16,8 @@ gulp.task('watch', function() {
 	gulp.watch(['./assets/sass/**/*.scss'], ['styles']);
 
 	//Js
+	gulp.watch(['./assets/js/requirejs/**/*.js'], ['lint', 'requirejs']);
+
 	//gulp.watch(['./assets/js/libs/*.js', './assets/js/app.js'], ['lint', 'scripts']);
 });
 

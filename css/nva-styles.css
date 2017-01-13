@@ -9348,7 +9348,6 @@ select.ui.dropdown {
     position: absolute;
     top: 50%;
     right: 15px;
-    background: url("../img/arrow.svg") no-repeat;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);

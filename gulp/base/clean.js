@@ -14,6 +14,13 @@ gulp.task('cleanJs', function() {
 		.pipe(clean());
 });
 
+gulp.task('cleanJsRequire', function() {
+	return gulp.src('./js/requirejs', {
+			read: false
+		})
+		.pipe(clean());
+});
+
 gulp.task('cleanAll', function() {
 	gulp.start('cleanCss', 'cleanJs');
 });
