@@ -18,7 +18,7 @@ input[type='search'] {
     outline: none;
 }
 
-@include selection {
+::selection {
     color: #fff;
     background-color: $color-1;
 }
@@ -41,7 +41,7 @@ img {
 }
 
 .link {
-    @include transition(background .3s ease);
+    transition : background .3s ease;
     &:hover {
         color: #fff;
         background: $color-1;

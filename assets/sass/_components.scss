@@ -1,8 +1,8 @@
 //Efeito de Hover nos links de categorias
 .effect-bg-sature {
-    @include transition(all ease .3s);
+    transition: all ease .3s;
     &:hover {
-        @include filter(saturate(170%));
+        filter: saturate(170%);
     }
 }
 
@@ -21,7 +21,7 @@
         left: 50%;
         display: block;
         max-width: inherit;
-        @include transform(translate(-50%, 0));
+        transform: translate(-50%, 0);
         .no-csstransforms & {
             left: auto;
         }
