@@ -10,7 +10,8 @@
     "bootstrap": "^4.0.0-alpha.6",
     "bourbon": "^4.2.7",
     "gulp": "^3.9.1",
-    "requirejs": "^2.3.2"
+    "requirejs": "^2.3.2",
+    "slideout": "^1.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.16.0",

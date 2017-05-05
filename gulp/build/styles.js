@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 	config = require('../config').sass;
 
 //Compila o SASS
-gulp.task('styles', function() {
+gulp.task('build-styles', function() {
 	return gulp.src(config.src)
 		.pipe(sass({
 			// includePaths: require('node-bourbon').with('other/path', 'another/path') 
@@ -16,9 +16,5 @@ gulp.task('styles', function() {
 		.pipe(rename(config.outputName))
 		.pipe(gulp.dest(config.dest))
 		.pipe(livereload());
-});
-
-gulp.task('css', function(callback) {
-	runSequence( ['styles'], 'watch', callback);
 });
 

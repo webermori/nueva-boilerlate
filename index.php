@@ -3,12 +3,14 @@
 <html lang="pt-BR">
     <?php include "_head.php" ?>
     <body class="pusher">
-        <?php include "_header.php" ?>
-        <?php include "__source/pages/page_home.php" ?>
-        <?php include "_footer.php" ?>
-        <!-- Menu Mobile -->
+        <div id="panel" class="panel">
+            <?php include "_header.php" ?>
+            <?php include "__source/pages/page_home.php" ?>
+            <?php include "_footer.php" ?>
+        </div>
+        
         <?php include "inc/menuMobile.php" ?>
-        <!-- .end Menu Mobile -->     
-        <script data-main="js/app/applications" src="js/vendor/require.js"></script>
+            
+        <script data-main="js/app/main" src="js/vendor/require.js"></script>
     </body>
 </html>

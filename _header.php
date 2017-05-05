@@ -15,7 +15,7 @@
 						</ul>
 					</nav>
 
-					<div class="menu-btn hidden-lg-up">&#9776;</div>
+					<div class="btn-menu-mobile js-slideout-toggle hidden-lg-up">&#9776;</div>
 
 				</div>
 			</div>

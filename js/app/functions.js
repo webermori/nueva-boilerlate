@@ -32,9 +32,40 @@ function sliderHome() {
 	});
 }
 
+function slideOut() {
+	require(["slideOut"], function(Slideout) {
+		var slideout = new Slideout({
+			'panel': document.getElementById('panel'),
+			'menu': document.getElementById('menuMobile'),
+			'padding': 256,
+			'tolerance': 70
+		});
+
+		// Toggle button
+		document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+		  slideout.open();
+		});
+
+		function close(eve) {
+		  eve.preventDefault();
+		  slideout.close();
+		}
+
+		slideout
+		  .on('beforeopen', function() {
+		    this.panel.classList.add('panel-open');
+		  })
+		  .on('open', function() {
+		    this.panel.addEventListener('click', close);
+		  })
+		  .on('beforeclose', function() {
+		    this.panel.classList.remove('panel-open');
+		    this.panel.removeEventListener('click', close);
+		  });
+	});
+}
+
 function home() {
-	$('.home').append('<h1>Weber</h1>');
-	$('.home').find('.header__logo-container').addClass('fadeInDown animated');
 	$('.slider-home').find('.slick-dots').wrap('<div class="container"></div>');
 }
 
@@ -43,6 +74,5 @@ function general() {
 	require(["sticky"], function() {
 		$(".header").stick_in_parent();
 	});
-
 
 }

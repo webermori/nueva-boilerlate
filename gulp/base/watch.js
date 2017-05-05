@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
+	runSequence = require('run-sequence'),
 	livereload = require('gulp-livereload');
 
 //Watch
 gulp.task('watch', function() {
-	//livereload.listen();
+	livereload.listen();
 	//browserSync.reload();
 
 	//Gulpfile
@@ -13,10 +14,12 @@ gulp.task('watch', function() {
 	gulp.watch(['./*.php', './__source/**/*.php'], livereload.reload);
 
 	//CSS
-	gulp.watch(['./assets/sass/**/*.scss'], ['styles']);
+	gulp.watch(['./assets/sass/**/*.scss'], ['build-styles']);
 
 	//Js
-	gulp.watch(['./assets/js/requirejs/**/*.js'], ['lint', 'requirejs']);
+	gulp.watch(['./assets/js/app/**/*.js'], ['lint', 'build-scripts']);
+
+	gulp.runSequence
 
 	//gulp.watch(['./assets/js/libs/*.js', './assets/js/app.js'], ['lint', 'scripts']);
 });

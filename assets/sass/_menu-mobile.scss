@@ -1,0 +1,40 @@
+.side-nav {
+	.side-nav-logo {
+		margin: 20px auto;
+		display: table;
+	}
+
+	.side-nav__box {
+		padding: 20px;
+	}
+}
+.menu-mobile {
+	li {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		
+		.active {
+			background: $color-1;
+			color: #FFF;  
+		}
+		
+		&:last-child {
+			border-bottom: none; 
+		} 
+		a {
+			background: #fff;
+			padding: 20px;
+			display: block;
+			color: #333; 
+		}
+
+		
+	}
+
+	.menu-mobile-submenu {
+		a {
+			background: #eee; 
+			padding: 20px 40px;
+		}
+	}
+}

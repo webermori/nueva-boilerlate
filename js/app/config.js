@@ -10,7 +10,8 @@
 			sticky: 'lib/jquery.sticky-kit.min',
 			slick: 'lib/slick.min',
 			semanticUi: 'lib/semantic-ui',
-			pushy: 'lib/pushy.min',
+			//pushy: 'lib/pushy.min',
+			slideOut: 'lib/slideout.min',
 			functions : 'app/functions'
 				// ,
 				// semanticUiTransition : '../../bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui'
@@ -21,7 +22,5 @@
 		//        "slick": ["jquery"]
 		//    }
 	});
-
-
 	
 })();

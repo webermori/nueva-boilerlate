@@ -37,7 +37,7 @@ require(['./config'], function(config) {
 
 				} else {
 
-					require(['pushy']);
+					slideOut();
 					console.log('Mobile');
 				}
 			}

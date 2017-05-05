@@ -17,7 +17,7 @@
 //Libs
 @import "../../bower_components/slick-carousel/slick/slick.scss";
 @import "libs/slick-theme";
-@import "libs/pushy";
+@import "libs/slide-out";
 // @import "libs/hover";
 
 //Components
@@ -27,6 +27,7 @@
 //Structure
 @import "header";
 @import "footer";
+@import "menu-mobile";
 
 //Pages
 @import "page-home";
