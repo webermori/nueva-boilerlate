@@ -1,0 +1,77 @@
+/* Left Navigation
+-----------------------------------------------*/
+.menu-mobile {
+	background: #f0f0f0;
+	width: 25%;
+	border-bottom: 1px solid #ddd; 
+	
+	a, .menu-mobile__sub {
+		padding: 20px;
+		display: block;
+		color: #333; 
+	}
+}
+/* First Level */
+.menu-mobile ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	//border-bottom: 1px solid #ccc
+}
+.menu-mobile ul li {
+	border-top: 1px solid #ddd;
+}
+.menu-mobile ul li a {
+	display: block;
+	line-height: normal;
+	text-decoration:none;
+}
+.menu-mobile ul li a:hover {
+	text-decoration: none;
+}
+	/* Second Level */
+	.menu-mobile ul ul {
+		border-bottom: none;
+		background: #f0f0f0; 
+	}
+	.menu-mobile ul ul li {
+		border-top: 1px solid #ddd;
+	}
+	.menu-mobile ul ul li a {
+		display: block;
+		line-height: normal;
+		padding-left: 30px;
+		background: #fbfbfb; 
+	}
+	
+	/* Third Level */
+	.menu-mobile ul ul ul {
+	}
+	.menu-mobile ul ul ul li {
+		border-color: #111; 
+	}
+	.menu-mobile ul ul ul li a {
+		background: #222;
+		color: #ccc;
+		padding-left: 40px;
+	}
+/* Accordion Button */
+.accordion-btn-wrap {
+	line-height: 57px;
+}
+
+ul li.has-subnav .accordion-btn {
+	color: #999;
+    background: #ddd;
+    font-size: 22px;
+    line-height: 57px;
+    display: block;
+    
+}
+
+@media screen and (max-width: 1024px) {
+	.menu-mobile {width: 40%;}
+}
+@media screen and (max-width: 700px) {
+	.menu-mobile {width: 100%;}
+}

@@ -2,17 +2,17 @@
 @import "variables";
 @import "mixins";
 
-//Fonts
+//Reset
 @import "reset";
-
-//Fonts
-@import "fontello";
-@import "dist/_sprite.scss";
 
 //Framework
 @import "bourbon";
 @import "libs/bootstrap";
 @import "libs/semantic-ui";
+
+//Fonts
+@import "fontello";
+@import "dist/_sprite.scss";
 
 //Libs
 @import "../../bower_components/slick-carousel/slick/slick.scss";
@@ -22,6 +22,7 @@
 
 //Components
 @import "commons";
+@import "components/nav-accordion";
 @import "components";
 
 //Structure

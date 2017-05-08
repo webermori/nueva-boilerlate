@@ -41,7 +41,7 @@ define("SITE_FILE_NAME", "nueva-boilerplate");
 define("MOBILE_BROWSER_COLOR", "#786941");
 
 //Site Info
-define("SITE_NAME", "Galeria RA");
+define("SITE_NAME", "Nueva Boilerplate");
 define("SITE_URL", "http://www.nueva-boilerplate.com.br");
 define("SITE_DOMAIN", "nueva-boilerplate.com.br");
 define("SITE_EMAIL", "contato@nueva-boilerplate.com.br");

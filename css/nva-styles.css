@@ -137,120 +137,6 @@ table {
   border-spacing: 0;
   border-collapse: collapse; }
 
-@font-face {
-  font-family: 'fontello';
-  src: url("../font/fontello.eot?6550785");
-  src: url("../font/fontello.eot?6550785#iefix") format("embedded-opentype"), url("../font/fontello.woff2?6550785") format("woff2"), url("../font/fontello.woff?6550785") format("woff"), url("../font/fontello.ttf?6550785") format("truetype"), url("../font/fontello.svg?6550785#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?6550785#fontello') format('svg');
-  }
-}
-*/
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
-
-.icon-phone:before {
-  content: '\e800'; }
-
-/* '' */
-.icon-twitter:before {
-  content: '\f099'; }
-
-/* '' */
-.icon-menu:before {
-  content: '\f0c9'; }
-
-/* '' */
-.icon-gplus:before {
-  content: '\f0d5'; }
-
-/* '' */
-.icon-mail-alt:before {
-  content: '\f0e0'; }
-
-/* '' */
-.icon-instagram:before {
-  content: '\f16d'; }
-
-/* '' */
-.icon-facebook:before {
-  content: '\f300'; }
-
-/* '' */
-/*
-Icon classes can be used entirely standalone. They are named after their original file names.
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-.icon-1 {
-  background-image: url(../images/dist/sprite.png?v=0.784638817422092);
-  background-position: 0px -72px;
-  width: 110px;
-  height: 110px; }
-
-.icon-2 {
-  background-image: url(../images/dist/sprite.png?v=0.784638817422092);
-  background-position: -211px 0px;
-  width: 110px;
-  height: 110px; }
-
-.icon-3 {
-  background-image: url(../images/dist/sprite.png?v=0.784638817422092);
-  background-position: 0px -182px;
-  width: 110px;
-  height: 110px; }
-
-.icon-nueva {
-  background-image: url(../images/dist/sprite.png?v=0.784638817422092);
-  background-position: 0px 0px;
-  width: 211px;
-  height: 72px; }
-
 /*!
  * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
@@ -9026,6 +8912,128 @@ select.ui.dropdown {
 /*******************************
         User Overrides
 *******************************/
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?25445616");
+  src: url("../font/fontello.eot?25445616#iefix") format("embedded-opentype"), url("../font/fontello.woff2?25445616") format("woff2"), url("../font/fontello.woff?25445616") format("woff"), url("../font/fontello.ttf?25445616") format("truetype"), url("../font/fontello.svg?25445616#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?25445616#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-phone:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-down-slim:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-up-slim:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-twitter:before {
+  content: '\f099'; }
+
+/* '' */
+.icon-menu:before {
+  content: '\f0c9'; }
+
+/* '' */
+.icon-gplus:before {
+  content: '\f0d5'; }
+
+/* '' */
+.icon-mail-alt:before {
+  content: '\f0e0'; }
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d'; }
+
+/* '' */
+.icon-facebook:before {
+  content: '\f300'; }
+
+/* '' */
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-1 {
+  background-image: url(../images/dist/sprite.png?v=0.784638817422092);
+  background-position: 0px -72px;
+  width: 110px;
+  height: 110px; }
+
+.icon-2 {
+  background-image: url(../images/dist/sprite.png?v=0.784638817422092);
+  background-position: -211px 0px;
+  width: 110px;
+  height: 110px; }
+
+.icon-3 {
+  background-image: url(../images/dist/sprite.png?v=0.784638817422092);
+  background-position: 0px -182px;
+  width: 110px;
+  height: 110px; }
+
+.icon-nueva {
+  background-image: url(../images/dist/sprite.png?v=0.784638817422092);
+  background-position: 0px 0px;
+  width: 211px;
+  height: 72px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -9246,7 +9254,7 @@ body {
   bottom: 0;
   width: 256px;
   min-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none; }
@@ -9365,6 +9373,76 @@ img {
 
 .icon {
   display: inline-block; }
+
+/* Left Navigation
+-----------------------------------------------*/
+.menu-mobile {
+  background: #f0f0f0;
+  width: 25%;
+  border-bottom: 1px solid #ddd; }
+  .menu-mobile a, .menu-mobile .menu-mobile__sub {
+    padding: 20px;
+    display: block;
+    color: #333; }
+
+/* First Level */
+.menu-mobile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.menu-mobile ul li {
+  border-top: 1px solid #ddd; }
+
+.menu-mobile ul li a {
+  display: block;
+  line-height: normal;
+  text-decoration: none; }
+
+.menu-mobile ul li a:hover {
+  text-decoration: none; }
+
+/* Second Level */
+.menu-mobile ul ul {
+  border-bottom: none;
+  background: #f0f0f0; }
+
+.menu-mobile ul ul li {
+  border-top: 1px solid #ddd; }
+
+.menu-mobile ul ul li a {
+  display: block;
+  line-height: normal;
+  padding-left: 30px;
+  background: #fbfbfb; }
+
+/* Third Level */
+.menu-mobile ul ul ul li {
+  border-color: #111; }
+
+.menu-mobile ul ul ul li a {
+  background: #222;
+  color: #ccc;
+  padding-left: 40px; }
+
+/* Accordion Button */
+.accordion-btn-wrap {
+  line-height: 57px; }
+
+ul li.has-subnav .accordion-btn {
+  color: #999;
+  background: #ddd;
+  font-size: 22px;
+  line-height: 57px;
+  display: block; }
+
+@media screen and (max-width: 1024px) {
+  .menu-mobile {
+    width: 40%; } }
+
+@media screen and (max-width: 700px) {
+  .menu-mobile {
+    width: 100%; } }
 
 .effect-bg-sature {
   transition: all ease .3s; }
@@ -9541,24 +9619,6 @@ img {
 
 .side-nav .side-nav__box {
   padding: 20px; }
-
-.menu-mobile li {
-  border-bottom: 1px solid #ddd;
-  display: block; }
-  .menu-mobile li .active {
-    background: #1ABC9C;
-    color: #FFF; }
-  .menu-mobile li:last-child {
-    border-bottom: none; }
-  .menu-mobile li a {
-    background: #fff;
-    padding: 20px;
-    display: block;
-    color: #333; }
-
-.menu-mobile .menu-mobile-submenu a {
-  background: #eee;
-  padding: 20px 40px; }
 
 .home .slider-home-container {
   width: 100%;

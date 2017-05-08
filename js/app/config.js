@@ -5,8 +5,9 @@
 		baseUrl: 'js',
 		paths: {
 			jquery: '//code.jquery.com/jquery-1.12.0.min',
-			maps: '../modules/google-maps',
-			recaptcha: '../modules/recaptcha_api',
+			maps: 'app/modules/google-maps',
+			navAccordion: 'app/modules/navAccordion',
+			recaptcha: 'app/modules/recaptcha_api',
 			sticky: 'lib/jquery.sticky-kit.min',
 			slick: 'lib/slick.min',
 			semanticUi: 'lib/semantic-ui',

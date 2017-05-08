@@ -47,6 +47,18 @@
       "css": "menu",
       "code": 61641,
       "src": "fontawesome"
+    },
+    {
+      "uid": "289b5f92f23acf1059c93fbf401c1ad5",
+      "css": "down-slim",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "0805cca616b3c12714f35af4d0912c10",
+      "css": "up-slim",
+      "code": 59394,
+      "src": "entypo"
     }
   ]
 }
