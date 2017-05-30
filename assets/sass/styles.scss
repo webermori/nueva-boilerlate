@@ -1,35 +1,35 @@
 //Variables
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 //Reset
-@import "reset";
+@import 'reset';
 
 //Framework
-@import "bourbon";
-@import "libs/bootstrap";
-@import "libs/semantic-ui";
+@import 'bourbon';
+@import 'libs/bootstrap';
+@import 'libs/semantic-ui';
 
 //Fonts
-@import "fontello";
-@import "dist/_sprite.scss";
+@import 'fontello';
+@import 'dist/sprite';
 
 //Libs
-@import "../../bower_components/slick-carousel/slick/slick.scss";
-@import "libs/slick-theme";
-@import "libs/slide-out";
-// @import "libs/hover";
+@import '../../bower_components/slick-carousel/slick/slick.scss';
+@import 'libs/slick-theme';
+@import 'libs/slide-out';
+// @import 'libs/hover';
 
 //Components
-@import "commons";
-@import "components/nav-accordion";
-@import "components";
+@import 'commons';
+@import 'components/nav-accordion';
+@import 'components';
 
 //Structure
-@import "header";
-@import "footer";
-@import "menu-mobile";
+@import 'header';
+@import 'footer';
+@import 'menu-mobile';
 
 //Pages
-@import "page-home";
-@import "page-contato";
+@import 'page-home';
+@import 'page-contato';

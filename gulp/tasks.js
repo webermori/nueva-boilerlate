@@ -33,6 +33,8 @@ gulp.task('img', function(callback) {
     runSequence('imagemin', callback);
 });
 
+gulp.task('sprite', ['clean-sprite', 'spritesmith']);
+
 gulp.task('svg', function(callback) {
 	runSequence('clean-svg', 'svg-build', 'build-styles', 'watch', callback);
 });

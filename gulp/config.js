@@ -6,7 +6,7 @@ module.exports = {
             src + "/sass"
         ],
         outputName: 'nva-styles.css',
-        dest: "./public/css/site"
+        dest: "./css"
     },
 
     js: {
@@ -14,7 +14,7 @@ module.exports = {
             src + "/js"
         ],
         outputName: "nva-applications.js",
-        dest: "./public/js"
+        dest: "./js"
     },
 
     img: {

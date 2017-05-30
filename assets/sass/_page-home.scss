@@ -20,7 +20,7 @@
             display: block;
             max-width: 1440px !important;
             max-width: inherit;
-            @include transform(translate(-50%, 0));
+            transform: translate(-50%, 0);
             img {
                 display: block;
             }
