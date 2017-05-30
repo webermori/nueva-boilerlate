@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
+	autoprefixer = require('gulp-autoprefixer'),
 	cleanCSS = require('gulp-clean-css'),
 	stripCssComments = require('gulp-strip-css-comments'),
 	rename = require('gulp-rename'),
@@ -15,6 +16,10 @@ gulp.task('build-styles', function() {
 			// - or - 
 			includePaths: require('node-bourbon').includePaths
 		}).on('error', sass.logError))
+		.pipe(autoprefixer({
+			browsers: ['last 10 versions'],
+			cascade: false
+		}))
 		.pipe(rename(config.outputName))
 		.pipe(gulp.dest(config.dest))
 		.pipe(livereload());

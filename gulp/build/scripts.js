@@ -30,12 +30,9 @@ gulp.task('lint', function() {
 // });
 
 gulp.task('build-scripts', function() {
-	return gulp.src([
-			'./assets/js/**/*.js'
-		])
+	return gulp.src(config.src + '/**/*.js')
 		.pipe(gulp.dest(config.dest));
 });
-
 
 //Vendor generate
 gulp.task('vendor', function() {
@@ -55,8 +52,4 @@ gulp.task('js-lib', function() {
 			'./bower_components/sticky-kit/jquery.sticky-kit.min.js',
 		])
 		.pipe(gulp.dest('js/lib/'));
-});
-
-gulp.task('req', function(callback) {
-	runSequence(['lint', 'cleanJsRequire'], ['scripts'], 'watch', callback);
 });

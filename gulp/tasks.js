@@ -19,7 +19,7 @@ gulp.task('css', function(callback) {
 /*----------  JS  ----------*/
 
 gulp.task('js', function(callback) {
-	runSequence('build-scripts', 'watch', callback);
+	runSequence('lint', 'build-scripts', 'watch', callback);
 });
 
 gulp.task('js-lib', function(callback) {
