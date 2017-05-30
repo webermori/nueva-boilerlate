@@ -42,3 +42,10 @@ gulp.task('svg', function(callback) {
 gulp.task('favicon', function(callback) {
 	runSequence('clean-favicon', 'build-favicon', callback);
 });
+
+
+/*----------  DEPLOY  ----------*/
+
+gulp.task('css-deploy', function() {
+    gulp.start('css-prod');
+});

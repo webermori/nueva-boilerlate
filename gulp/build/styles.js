@@ -1,8 +1,6 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
-	cleanCSS = require('gulp-clean-css'),
-	stripCssComments = require('gulp-strip-css-comments'),
 	rename = require('gulp-rename'),
 	livereload = require('gulp-livereload'),
 	runSequence = require('run-sequence'),
@@ -23,11 +21,4 @@ gulp.task('build-styles', function() {
 		.pipe(rename(config.outputName))
 		.pipe(gulp.dest(config.dest))
 		.pipe(livereload());
-});
-
-gulp.task('css-deploy', function() {
-  return gulp.src(config.dest + '/*.css')
-    .pipe(cleanCSS())
-    .pipe(stripCssComments({preserve: false}))
-    .pipe(gulp.dest(config.dest));
 });
