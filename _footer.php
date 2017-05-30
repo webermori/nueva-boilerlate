@@ -35,7 +35,7 @@
 		<footer class="footer">
 	        <div class="row">
 	            <div class="col-md-16">
-	                <p class="copyrights">©2016 Nueva - Todos os direitos reservados.</p>
+	                <p class="copyrights">©<?php Date('Y') ?> Nueva - Todos os direitos reservados.</p>
 	            </div>
 	            <div class="col-md-8">
 	                <a href="http://www.agencianueva.com.br/" class="nueva" target="_blank" title="Nueva - Revolução Criativa"><img src="images/logo-nueva-wh.svg" alt="Nueva - Revolução Criativa" /></a>
@@ -43,4 +43,7 @@
 	        </div>
 	    </footer>
 	</div>
+</div>
+<div class="hidden-xs-up">
+    <?php include "images/svg-sprite/symbol/svg/sprite.symbol.svg" ?>
 </div>

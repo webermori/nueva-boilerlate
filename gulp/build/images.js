@@ -4,6 +4,8 @@ var gulp = require('gulp'),
     gutil = require("gulp-util"),
     changed = require('gulp-changed'),
     runSequence = require('run-sequence');
+    svgSprite = require("gulp-svg-sprite"),
+    config = require('../config').img;
 
 gulp.task('imagemin', function() {
 	return gulp.src('./assets/img/*')
@@ -12,12 +14,11 @@ gulp.task('imagemin', function() {
 		.pipe(gulp.dest('./images'))
 });
 
-gulp.task('img', function(callback) {
-    runSequence('imagemin', callback);
-});
 
+
+/*----------  Favicon  ----------*/
 gulp.task("build-favicon", function () {
-    return gulp.src("./assets/img/favicon/favicon.png").pipe(favicons({
+    return gulp.src(config.src +  "/favicon/favicon.png").pipe(favicons({
         icons: {
             android: false, // Create Android homescreen icon. `boolean`
             appleIcon: true, // Create Apple touch icons. `boolean` or `{ offset: offsetInPercentage }`
@@ -33,4 +34,16 @@ gulp.task("build-favicon", function () {
     }))
     .on("error", gutil.log)
     .pipe(gulp.dest("./images/favicon"));
+});
+
+/*----------  SVG  ----------*/
+// Concatena todos ícones svg
+gulp.task("svg-build", function() {
+    gulp.src(config.src + "/svg/*.svg")
+        .pipe(svgSprite({
+            mode                : {
+                symbol          : true 
+            },
+        }))
+        .pipe(gulp.dest(config.dest + "/svg-sprite"));
 });

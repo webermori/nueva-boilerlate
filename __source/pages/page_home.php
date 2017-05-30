@@ -11,7 +11,9 @@
 					<i class="icon icon-nueva"></i>
 					<i class="icon icon-1"></i>
 				</div>
-				<div class="col-md-12">Teste</div>
+				<div class="col-md-12">
+					<svg class="YOUR_CLASS_NAME" style="width: 50px; height: 50px;"><use xlink:href="#brazil"></use></svg>
+				</div>
 			</div>
 		</div>
 	</div>

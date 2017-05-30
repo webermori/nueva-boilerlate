@@ -9,15 +9,10 @@ gulp.task('default', function() {
     gulp.start('build');
 });
 
+/*----------  CSS  ----------*/
 
-/*----------  IMAGES  ----------*/
-
-gulp.task('svg', function(callback) {
-	runSequence('svg-build', 'build-styles', 'watch', callback);
-});
-
-gulp.task('favicon', function(callback) {
-	runSequence('clean-favicon', 'build-favicon', callback);
+gulp.task('css', function(callback) {
+	runSequence(['build-styles'], 'watch', callback);
 });
 
 
@@ -32,10 +27,16 @@ gulp.task('js-lib', function(callback) {
 });
 
 
-/*----------  CSS  ----------*/
+/*----------  IMAGES  ----------*/
 
-gulp.task('css', function(callback) {
-	runSequence(['build-styles'], 'watch', callback);
+gulp.task('img', function(callback) {
+    runSequence('imagemin', callback);
 });
 
+gulp.task('svg', function(callback) {
+	runSequence('clean-svg', 'svg-build', 'build-styles', 'watch', callback);
+});
 
+gulp.task('favicon', function(callback) {
+	runSequence('clean-favicon', 'build-favicon', callback);
+});
