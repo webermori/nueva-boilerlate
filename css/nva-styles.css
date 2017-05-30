@@ -9378,7 +9378,7 @@ img {
 -----------------------------------------------*/
 .menu-mobile {
   background: #f0f0f0;
-  width: 25%;
+  width: 100%;
   border-bottom: 1px solid #ddd; }
   .menu-mobile a, .menu-mobile .menu-mobile__sub {
     padding: 20px;
@@ -9435,14 +9435,6 @@ ul li.has-subnav .accordion-btn {
   font-size: 22px;
   line-height: 57px;
   display: block; }
-
-@media screen and (max-width: 1024px) {
-  .menu-mobile {
-    width: 40%; } }
-
-@media screen and (max-width: 700px) {
-  .menu-mobile {
-    width: 100%; } }
 
 .effect-bg-sature {
   transition: all ease .3s; }
@@ -9613,12 +9605,13 @@ ul li.has-subnav .accordion-btn {
   .footer .nueva:hover {
     opacity: 1; }
 
-.side-nav .side-nav-logo {
-  margin: 20px auto;
-  display: table; }
-
-.side-nav .side-nav__box {
-  padding: 20px; }
+.side-nav {
+  display: none; }
+  .side-nav .side-nav-logo {
+    margin: 20px auto;
+    display: table; }
+  .side-nav .side-nav__box {
+    padding: 20px; }
 
 .home .slider-home-container {
   width: 100%;

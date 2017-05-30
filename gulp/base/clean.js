@@ -21,6 +21,13 @@ gulp.task('cleanJsRequire', function() {
 		.pipe(clean());
 });
 
+gulp.task('clean-favicon', function() {
+	return gulp.src('./images/favicon', {
+			read: false
+		})
+		.pipe(clean());
+});
+
 gulp.task('cleanAll', function() {
 	gulp.start('cleanCss', 'cleanJs');
 });

@@ -6,19 +6,18 @@ var gulp = require('gulp'),
     clean = require('gulp-clean');
     
 gulp.task('spritesmith', function () {
-    var spriteData = gulp.src('./images/_original/sprite-icons/*.png')
+    var spriteData = gulp.src('./assets/img/sprite-icons/*.png')
         .pipe(spritesmith({
-            imgName: '../images/dist/sprite.png',
+            imgName: '../images/sprite/sprite.png',
             cssName: 'sprite.css'
         }));
-    spriteData.img.pipe(gulp.dest('./dist'));
+    spriteData.img.pipe(gulp.dest('./sprite'));
     spriteData.css
     .pipe(cssVersioner({version: Math.random()}))
     .pipe(rename({
 		prefix: "_",
 		extname: ".scss"
 	}))
-    //.pipe(gulp.dest('./assets/sass/dist'));
     .pipe(gulp.dest('./assets/sass/dist'));
 });
 

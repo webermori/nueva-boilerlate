@@ -10,10 +10,14 @@ gulp.task('default', function() {
 });
 
 
-/*----------  SVG  ----------*/
+/*----------  IMAGES  ----------*/
 
 gulp.task('svg', function(callback) {
 	runSequence('svg-build', 'build-styles', 'watch', callback);
+});
+
+gulp.task('favicon', function(callback) {
+	runSequence('clean-favicon', 'build-favicon', callback);
 });
 
 
