@@ -7,8 +7,6 @@ require(['./config'], function(config) {
 				facebook();
 				general();
 
-				
-
 				var tag = document.querySelector('main[data-page="controller"]'),
 				section = tag && tag.getAttribute("data-custom-js");
 
