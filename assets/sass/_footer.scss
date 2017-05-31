@@ -18,7 +18,7 @@
         text-shadow: 0 -1px 0 #111;
         @include max-sm {
             margin: 10px 0;
-            @include center();
+            @include center;
         }
     }
     .nueva {
@@ -27,7 +27,8 @@
         width: 165px;
         margin: 0 auto;
         opacity: .7;
-        @include transition();
+
+        @include transition;
         @include min-md {
             float: right;
         }
@@ -35,7 +36,7 @@
             float: right;
             width: 60px;
         }
-        &:before {
+        &::before {
             font-family: verdana;
             font-size: 11px;
             position: absolute;

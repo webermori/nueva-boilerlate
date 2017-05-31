@@ -18,8 +18,7 @@
             position: relative;
             left: 50%;
             display: block;
-            max-width: 1440px !important;
-            max-width: inherit;
+            max-width: 1440px;
             transform: translate(-50%, 0);
             img {
                 display: block;
@@ -43,24 +42,23 @@
                     height: inherit;
                     margin: 0 4px;
                     button {
-                        width: 16px;
-                        height: 16px;
-                        border: solid 1px #222;
-                        -webkit-border-radius: 20px;
-                        border-radius: 20px;
-                        background: #d0d2d3;
+                    width: 16px;
+                    height: 16px;
+                    border: solid 1px #222;
+                    -webkit-border-radius: 20px;
+                    border-radius: 20px;
+                    background: #d0d2d3;
                     }
-                }
-                .slick-active {
+                    }
+                    .slick-active {
                     button {
-                        background: $color-1;
+                    background: $color-1;
                     }
                 } */
             }
         }
     }
 }
-
 .icon-nueva {
     //@include sprite($icon-nueva);
 }

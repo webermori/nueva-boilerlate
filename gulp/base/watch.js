@@ -14,7 +14,7 @@ gulp.task('watch', function() {
 	gulp.watch(['./*.php', './__source/**/*.php'], livereload.reload);
 
 	//CSS
-	gulp.watch(['./assets/sass/**/*.scss'], ['build-styles']);
+	gulp.watch(['./assets/sass/**/*.scss'], ['sass-lint', 'sass']);
 
 	//Js
 	gulp.watch(['./assets/js/app/**/*.js'], ['lint', 'build-scripts']);

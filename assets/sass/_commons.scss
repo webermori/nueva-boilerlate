@@ -5,17 +5,20 @@ body {
     min-width: 300px;
 }
 
-*,
-*:before,
-*:after,
-input[type='search'] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+* {
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+    &:focus {
+        outline: none;
+    }
 }
 
-*:focus {
-    outline: none;
+input {
+    &[type='search'] {
+        box-sizing: border-box;
+    }
 }
 
 ::selection {
@@ -41,7 +44,7 @@ img {
 }
 
 .link {
-    transition : background .3s ease;
+    transition: background .3s ease;
     &:hover {
         color: #fff;
         background: $color-1;
@@ -98,6 +101,7 @@ img {
 .form-action {
     margin-top: 20px;
 }
+
 .icon {
     display: inline-block;
 }

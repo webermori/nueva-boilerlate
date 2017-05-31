@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence');
 
 gulp.task('build', function(callback) {
-	runSequence(['lint'], ['build-styles', 'build-scripts'], 'watch', callback);
+	runSequence(['lint'], ['sass', 'build-scripts'], 'watch', callback);
 });
 
 gulp.task('default', function() {
@@ -12,7 +12,7 @@ gulp.task('default', function() {
 /*----------  CSS  ----------*/
 
 gulp.task('css', function(callback) {
-	runSequence(['build-styles'], 'watch', callback);
+	runSequence('sass-lint', ['sass'], 'watch', callback);
 });
 
 
@@ -36,7 +36,7 @@ gulp.task('img', function(callback) {
 gulp.task('sprite', ['clean-sprite', 'spritesmith']);
 
 gulp.task('svg', function(callback) {
-	runSequence('clean-svg', 'svg-build', 'build-styles', 'watch', callback);
+	runSequence('clean-svg', 'svg-build', 'sass', 'watch', callback);
 });
 
 gulp.task('favicon', function(callback) {
