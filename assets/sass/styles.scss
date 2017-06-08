@@ -5,8 +5,8 @@
 
 //Framework
 @import 'bourbon';
-@import 'libs/bootstrap';
-@import 'libs/semantic-ui';
+@import 'lib/bootstrap';
+@import 'lib/semantic-ui';
 
 //Fonts
 @import 'fontello';
@@ -14,9 +14,10 @@
 
 //Libs
 @import '../../bower_components/slick-carousel/slick/slick.scss';
-@import 'libs/slick-theme';
-@import 'libs/slide-out';
-// @import 'libs/hover';
+@import 'lib/slick-theme';
+@import 'lib/slide-out';
+@import 'lib/main-menu';
+// @import 'lib/hover';
 
 //Components
 @import 'commons';

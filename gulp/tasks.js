@@ -23,7 +23,7 @@ gulp.task('js', function(callback) {
 });
 
 gulp.task('js-lib', function(callback) {
-	runSequence('clean-js-lib', 'build-js-lib', 'build-scripts', callback);
+	runSequence('clean-js-lib', 'clone-js-lib', 'build-scripts', callback);
 });
 
 

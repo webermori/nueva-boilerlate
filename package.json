@@ -9,10 +9,10 @@
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "bourbon": "^4.2.7",
-    "gulp": "^3.9.1",
+    "node-bourbon": "^4.2.8",
     "requirejs": "^2.3.2",
     "slideout": "^1.0.1",
-    "node-bourbon": "^4.2.8"
+    "superfish": "^1.7.9"
   },
   "devDependencies": {
     "browser-sync": "^2.16.0",

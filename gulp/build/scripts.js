@@ -43,13 +43,15 @@ gulp.task('vendor', function() {
 		.pipe(gulp.dest('js/vendor/'));
 });
 
-gulp.task('js-lib', function() {
+gulp.task('clone-js-lib', function() {
 	return gulp.src([
 			//'./bower_components/pushy/js/pushy.min.js',
 			'./node_modules/slideout/dist/slideout.min.js',
 			'./bower_components/slick-carousel/slick/slick.min.js',
 			'./bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
 			'./bower_components/sticky-kit/jquery.sticky-kit.min.js',
+			'./node_modules/superfish/dist/js/superfish.min.js',
+			'./node_modules/superfish/dist/js/hoverIntent.js'
 		])
 		.pipe(gulp.dest('js/lib/'));
 });

@@ -13,6 +13,8 @@
 			semanticUi: 'lib/semantic-ui',
 			//pushy: 'lib/pushy.min',
 			slideOut: 'lib/slideout.min',
+			superFish: 'lib/superfish.min',
+			hoverIntent: 'lib/hoverIntent',
 			functions : 'app/functions'
 				// ,
 				// semanticUiTransition : '../../bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui'

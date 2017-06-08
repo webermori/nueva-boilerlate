@@ -1,3 +1,9 @@
+function superFishMenu() {
+	require(['hoverIntent', 'superFish'], function(){
+		$('.main-menu').superfish();
+	});
+}
+
 function semanticUi() {
 	$('.ui.dropdown').dropdown();
 }

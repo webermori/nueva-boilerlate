@@ -34,6 +34,7 @@ require(['./config'], function(config) {
 				if (window.matchMedia("(min-width: 991px)").matches) {
 
 					console.log('Desktop');
+					superFishMenu();
 
 				} else {
 

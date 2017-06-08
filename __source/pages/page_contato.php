@@ -18,10 +18,8 @@
                         <div class="field">
                             <label for="formContact_telefone" class="hide">Telefone</label>
                             <input name="telefone" placeholder="Telefone" id="formContact_telefone" type="text" class="validate" title="Digite seu telefone" maxlength="20">
-                           
                         </div>
                         
-
                         <div class="two fields">
                             <div class="field">
                                 <label for="formContact_assunto" class="hide">Assunto</label>

@@ -53,7 +53,7 @@ gulp.task('sass-lint', function() {
 			},
 			files: {
 				ignore: [
-				'**/libs/**/*.scss', 
+				'**/lib/**/*.scss', 
 				'**/_fontello.scss',
 				'**/_mixins.scss',
 				'**/dist/_sprite.scss'
