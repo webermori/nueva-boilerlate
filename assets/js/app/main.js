@@ -7,6 +7,8 @@ require(['./config'], function(config) {
 				facebook();
 				general();
 
+				require(['uikit']);
+
 				var tag = document.querySelector('main[data-page="controller"]'),
 				section = tag && tag.getAttribute("data-custom-js");
 
@@ -18,7 +20,6 @@ require(['./config'], function(config) {
 					console.log('Home');
 
 				} else if (section == "contato") {
-					console.log('Contato');
 
 					require(['maps', 'recaptcha', 'semanticUi'], function() {
 						semanticUi();
@@ -45,6 +46,8 @@ require(['./config'], function(config) {
 							collapseButtonText: '<i class="icon icon-up-slim"></i>'
 						});
 					});
+
+					
 
 					console.log('Mobile');
 				}

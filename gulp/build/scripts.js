@@ -2,6 +2,9 @@ var gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	copy = require('gulp-contrib-copy'),
 	concat = require('gulp-concat'),
+	uglify = require('gulp-uglify'),
+	minify = require('gulp-minify'),
+	babel = require('gulp-babel'),
 	runSequence = require('run-sequence'),
 	config = require('../config').js;
 
@@ -51,7 +54,8 @@ gulp.task('clone-js-lib', function() {
 			'./bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
 			'./bower_components/sticky-kit/jquery.sticky-kit.min.js',
 			'./node_modules/superfish/dist/js/superfish.min.js',
-			'./node_modules/superfish/dist/js/hoverIntent.js'
+			'./node_modules/superfish/dist/js/hoverIntent.js',
+			'./node_modules/uikit/dist/js/uikit.min.js'
 		])
 		.pipe(gulp.dest('js/lib/'));
 });

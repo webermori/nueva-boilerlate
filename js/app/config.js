@@ -15,6 +15,7 @@
 			slideOut: 'lib/slideout.min',
 			superFish: 'lib/superfish.min',
 			hoverIntent: 'lib/hoverIntent',
+			uikit: 'lib/uikit.min',
 			functions : 'app/functions'
 				// ,
 				// semanticUiTransition : '../../bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui'
