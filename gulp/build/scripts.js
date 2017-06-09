@@ -2,9 +2,6 @@ var gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	copy = require('gulp-contrib-copy'),
 	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify'),
-	minify = require('gulp-minify'),
-	babel = require('gulp-babel'),
 	runSequence = require('run-sequence'),
 	config = require('../config').js;
 
