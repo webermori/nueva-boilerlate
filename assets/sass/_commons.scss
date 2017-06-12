@@ -94,8 +94,10 @@ img {
 
 .parsley-errors-list {
     font-size: 11px;
-    margin: -8px 0 10px;
-    color: red;
+    margin: 5px 0 10px;
+    color: $color-alert;
+    list-style: none;
+    padding: 0;
 }
 
 .form-action {

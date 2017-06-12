@@ -56,7 +56,7 @@
 								<a href="#">menu item</a>
 							</li>
 							<li>
-								<a href="#">menu item</a>
+								<a href="contato.php">Contato</a>
 							</li> 
 						</ul>
 					</nav>

@@ -37,22 +37,23 @@ gulp.task('build-scripts', function() {
 //Vendor generate
 gulp.task('vendor', function() {
 	return gulp.src([
-			'./bower_components/html5-boilerplate/dist/js/vendor/*',
-			'./node_modules/requirejs/require.js',
-		])
-		.pipe(gulp.dest('js/vendor/'));
+		'./bower_components/html5-boilerplate/dist/js/vendor/*',
+		'./node_modules/requirejs/require.js',
+	])
+	.pipe(gulp.dest('js/vendor/'));
 });
 
 gulp.task('clone-js-lib', function() {
 	return gulp.src([
-			//'./bower_components/pushy/js/pushy.min.js',
-			'./node_modules/slideout/dist/slideout.min.js',
-			'./bower_components/slick-carousel/slick/slick.min.js',
-			'./bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
-			'./bower_components/sticky-kit/jquery.sticky-kit.min.js',
-			'./node_modules/superfish/dist/js/superfish.min.js',
-			'./node_modules/superfish/dist/js/hoverIntent.js',
-			'./node_modules/uikit/dist/js/uikit.min.js'
-		])
-		.pipe(gulp.dest('js/lib/'));
+		'./node_modules/slideout/dist/slideout.min.js',
+		'./node_modules/parsleyjs/dist/parsley.min.js',
+		'./node_modules/parsleyjs/dist/i18n/pt-br.js',
+		'./bower_components/slick-carousel/slick/slick.min.js',
+		'./bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
+		'./bower_components/sticky-kit/jquery.sticky-kit.min.js',
+		'./node_modules/superfish/dist/js/superfish.min.js',
+		'./node_modules/superfish/dist/js/hoverIntent.js',
+		'./node_modules/uikit/dist/js/uikit.min.js'
+	])
+	.pipe(gulp.dest('js/lib/'));
 });

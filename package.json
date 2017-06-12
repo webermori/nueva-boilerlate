@@ -11,6 +11,7 @@
     "bourbon": "^4.2.7",
     "html5-boilerplate": "^0.0.1",
     "node-bourbon": "^4.2.8",
+    "parsleyjs": "^2.7.2",
     "requirejs": "^2.3.2",
     "slideout": "^1.0.1",
     "superfish": "^1.7.9",

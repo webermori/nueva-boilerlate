@@ -8,8 +8,10 @@ function semanticUi() {
 	$('.ui.dropdown').dropdown();
 }
 
-function valida() {
-	$('#formContact').parsley();
+function parsley() {
+	require(['parsleyBr'], function(){
+		$('#formContact').parsley();
+	});
 }
 
 function facebook() {

@@ -21,11 +21,9 @@ require(['./config'], function(config) {
 
 				} else if (section == "contato") {
 
-					require(['maps', 'recaptcha', 'semanticUi'], function() {
-						semanticUi();
-					});
+					require(['maps', 'recaptcha']);
 
-					//valida();
+					parsley();
 
 				} else {
 					console.log('Seção Nula ' + section);
