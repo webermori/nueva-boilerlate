@@ -30,8 +30,8 @@ gulp.task('lint', function() {
 // });
 
 gulp.task('build-scripts', function() {
-	return gulp.src(config.src + '/**/*.js')
-		.pipe(gulp.dest(config.dest));
+	gulp.src(config.src  + '/app/**/*.js')
+		.pipe(gulp.dest(config.dest + '/app'));
 });
 
 //Vendor generate
@@ -45,6 +45,7 @@ gulp.task('vendor', function() {
 
 gulp.task('clone-js-lib', function() {
 	return gulp.src([
+		'./node_modules/enquire.js/dist/enquire.min.js',
 		'./node_modules/slideout/dist/slideout.min.js',
 		'./node_modules/parsleyjs/dist/parsley.min.js',
 		'./node_modules/parsleyjs/dist/i18n/pt-br.js',

@@ -4,6 +4,7 @@
 	require.config({
 		baseUrl: 'js',
 		paths: {
+			enquire: 'lib/enquire.min',
 			jquery: 'vendor/jquery-1.12.0.min',
 			parsley: 'lib/parsley.min',
 			parsleyBr: 'lib/pt-br',
@@ -16,6 +17,7 @@
 			superFish: 'lib/superfish.min',
 			hoverIntent: 'lib/hoverIntent',
 			uikit: 'lib/uikit.min',
+			bundle : 'bundle/general',
 			functions : 'app/functions'
 		},
 		shim: {

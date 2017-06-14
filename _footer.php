@@ -22,9 +22,9 @@
             </div>
             <div class="col-md-8">
             	<ul class="social">
-                    <li><a href="https://www.facebook.com/" title="Adicione-nos no Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/" title="Siga-nos no Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/" title="Siga-nos no Instagram" target="_blank"><i class="icon-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/" title="Adicione-nos no Facebook" uk-tooltip target="_blank"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/" title="Siga-nos no Twitter" uk-tooltip target="_blank"><i class="icon-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/" title="Siga-nos no Instagram" uk-tooltip target="_blank"><i class="icon-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -38,7 +38,7 @@
 	                <p class="copyrights">©<?php Date('Y') ?> Nueva - Todos os direitos reservados.</p>
 	            </div>
 	            <div class="col-md-8">
-	                <a href="http://www.agencianueva.com.br/" class="nueva" target="_blank" title="Nueva - Revolução Criativa"><img src="images/logo-nueva-wh.svg" alt="Nueva - Revolução Criativa" /></a>
+	                <a href="http://www.agencianueva.com.br/" class="nueva" target="_blank" title="Nueva - Revolução Criativa" uk-tooltip><img src="images/logo-nueva-wh.svg" alt="Nueva - Revolução Criativa" /></a>
 	            </div>
 	        </div>
 	    </footer>
