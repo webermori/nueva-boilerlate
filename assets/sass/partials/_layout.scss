@@ -1,0 +1,28 @@
+.main {
+    min-height: 550px; //background: #f0f0f0; 
+}
+.section {
+	padding-top: 20px; 
+    padding-bottom: 20px; 
+    @include min-lg {
+    	padding-top: 50px; 
+    	padding-bottom: 50px; 
+    }
+}
+.content-container {
+    padding: 40px 0;
+}
+.container {
+    max-width: 1020px;
+    &--block {
+        background: #FFF;
+        padding: 50px 30px 30px;
+    }
+}
+.main-container {
+    min-height: 550px;
+}
+.info-block {
+    background: #FFF;
+    @extend .section;
+}

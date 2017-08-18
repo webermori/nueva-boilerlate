@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 /*----------  Styles  ----------*/
 
 gulp.task('clean-css', function() {
-	return gulp.src(pathCss.dest + '/lpf-styles.css')
+	return gulp.src(pathCss.dest + '/*.css')
 		.pipe(clean());
 });
 
@@ -16,6 +16,11 @@ gulp.task('clean-css', function() {
 
 gulp.task('clean-js-app', function() {
 	return gulp.src(pathJs.dest + '/app')
+		.pipe(clean());
+});
+
+gulp.task('clean-js-vendor', function() {
+	return gulp.src(pathJs.dest + '/vendor')
 		.pipe(clean());
 });
 
@@ -39,7 +44,7 @@ gulp.task('clean-img', function() {
 });
 
 gulp.task('clean-sprite', function(){
-    return gulp.src(['./images/dist', './assets/sass/dist'])
+    return gulp.src([pathImg.dest + '/dist', pathCss.src + '/dist'])
     .pipe(clean());
 });
 

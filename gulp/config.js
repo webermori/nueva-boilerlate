@@ -1,26 +1,26 @@
 var src = './assets';
-
+var prefix = 'nva';
 module.exports = {
     sass: {
         src: [
-            src + "/sass"
+            src + '/sass'
         ],
-        outputName: 'nva-styles.css',
-        dest: "./css"
+        outputName: prefix + '-styles.css',
+        dest: './css'
     },
 
     js: {
         src: [
-            src + "/js"
+            src + '/js'
         ],
-        outputName: "nva-applications.js",
-        dest: "./js"
+        outputName: prefix + 'applications.js',
+        dest: './js'
     },
 
     img: {
         src: [
-            src + "/img"
+            src + '/img'
         ],
-        dest: "./images"
+        dest: './images'
     }
 };

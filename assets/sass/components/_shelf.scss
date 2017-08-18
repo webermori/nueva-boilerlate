@@ -1,0 +1,28 @@
+.Shelf {
+	&-figure {
+		margin-bottom: 10px;
+		border-width: 3px;
+		border-style: solid;
+		border-color: transparent; 
+		display: inline-block;
+		transition: ease all 0.3s;
+	}
+	&-title {
+		font-weight: 600;
+		font-size: 14px;
+		@extend %title-dot;
+	}
+
+	&-link {
+		&:hover {
+			.Shelf {
+				&-figure {
+					border-color: $color-1; 
+				}
+				&-title {
+					color: $color-1; 
+				}
+			}
+		}
+	}
+}

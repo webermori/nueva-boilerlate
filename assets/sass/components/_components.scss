@@ -1,0 +1,70 @@
+//Efeito de Hover nos links de categorias
+.effect-bg-sature {
+    transition: all ease .3s;
+    &:hover {
+        filter: saturate(170%);
+    }
+}
+
+.Tel {
+    letter-spacing: 1px;
+    &-ddd {
+        font-size: 12px;
+    }
+    &-num {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+//Banner Responsivo
+.responsive-banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    a {
+        display: block;
+    }
+    img {
+        position: relative;
+        left: 50%;
+        display: block;
+        max-width: inherit;
+        transform: translate(-50%, 0);
+        .no-csstransforms & {
+            left: auto;
+        }
+        @media (max-width: 992px) {
+            width: 155%;
+            max-width: none!important;
+        }
+    }
+}
+
+//Redes Sociais
+.social {
+    margin: 15px 0 0;
+    @include min-md {
+        float: right;
+    }
+    .social-heading {
+        font-weight: 700;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+    li {
+        display: inline-block;
+        margin-right: 5px;
+        a {
+            &:hover {
+                i {
+                    color: $color-1;
+                }
+            }
+        }
+        i {
+            font-size: 24px;
+        }
+    }
+}

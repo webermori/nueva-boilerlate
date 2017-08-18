@@ -1,0 +1,16 @@
+.IconBox {
+    position: relative;
+    
+    &-icon {
+        position: absolute;
+        top: 2px;
+        left: 0; 
+        width: 18px;
+        height: 18px;   
+    }
+    &-content {
+        display: block;
+        padding-left: 25px; 
+    }
+}
+

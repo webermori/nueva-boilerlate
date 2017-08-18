@@ -1,33 +1,61 @@
-//Variables
-
-@import 'variables';
-@import 'mixins';
-
-//Framework
+//Node Packages
 @import 'bourbon';
-@import 'lib/bootstrap/bootstrap';
-@import 'lib/uikit/uikit';
+@import 'neat';
 
-//Fonts
-@import 'fontello';
+//Helpers
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/placeholders';
+
+//Vendors (Frameworls and External Libraries)
+@import 'vendors/bootstrap/bootstrap';
+@import 'vendors/semantic-ui/sidebar';
+@import 'vendors/semantic-ui/accordion';
+@import 'vendors/semantic-ui/skins/accordion';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'vendors/lightslider';
+@import 'vendors/lightgallery';
+
+//Skins
+@import 'skins/slick-theme';
+
+//Base
+@import 'base/reset';
+@import 'base/grid';
+@import 'base/globals';
+@import 'base/utilities';
+@import 'base/headings';
+@import 'base/commons';
+
+//Distribuition Folder (Generated from Gulp)
 @import 'dist/sprite';
 
-//Libs
-@import '../../bower_components/slick-carousel/slick/slick.scss';
-@import 'lib/slick-theme';
-@import 'lib/slide-out';
-@import 'lib/main-menu';
-// @import 'lib/hover';
+//Layout
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/layout';
+@import 'partials/fix';
+@import 'partials/menu-mobile';
+@import 'partials/form';
 
 //Components
-@import 'commons';
-@import 'components';
-
-//Structure
-@import 'header';
-@import 'footer';
-@import 'menu-mobile';
+@import 'components/components';
+@import 'components/banner-slider';
+@import 'components/slide-content';
+@import 'components/responsive-tabs';
+@import 'components/overlay';
+@import 'components/card';
+@import 'components/main-menu';
+@import 'components/company-info';
+@import 'components/specifications-list';
+@import 'components/shelf';
+@import 'components/gallery';
+@import 'components/icon-box';
 
 //Pages
-@import 'page-home';
-@import 'page-contato';
+@import 'pages/home';
+@import 'pages/company';
+@import 'pages/products';
+@import 'pages/product';
+@import 'pages/budget';
+@import 'pages/contact';

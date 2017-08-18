@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     config = require('../config').img;
 
 gulp.task('imagemin', function() {
-	return gulp.src('./assets/img/*')
+	return gulp.src(config.src + '/imagemin-src/*.{jpg,gif,png}')
 		.pipe(changed('./images'))
 		.pipe(imagemin())
 		.pipe(gulp.dest('./images'))

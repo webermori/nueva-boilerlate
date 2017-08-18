@@ -1,0 +1,21 @@
+.link-mapa {
+    font-size: 12px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    &--primary {
+        fill: $color-1;
+    }
+    &--grey {
+        fill: #999;
+    }
+    &--tiny {
+        width: 14px;
+        height: 14px;
+    }
+}

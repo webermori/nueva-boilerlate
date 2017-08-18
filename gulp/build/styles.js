@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
+	nodeBourbon = require('node-bourbon').includePaths,
+	nodeNeat = require('node-neat').includePaths,
 	autoprefixer = require('gulp-autoprefixer'),
 	sourcemaps = require('gulp-sourcemaps'),
 	rename = require('gulp-rename'),
@@ -14,8 +16,7 @@ gulp.task('sass', function() {
 	return gulp.src(config.src + '/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass({
-			includePaths: require('node-bourbon').includePaths
-				// includePaths: require('node-bourbon').with('other/path', 'another/path') 
+			includePaths: nodeBourbon.concat(nodeNeat)
 		}).on('error', sass.logError))
 		.pipe(autoprefixer({
 			browsers: ['last 10 versions'],
@@ -32,11 +33,13 @@ gulp.task('sass-lint', function() {
 		.pipe(sassLint({
 			rules: {
 				'indentation': 0,
+				'quotes': 0,
 				'placeholder-in-extend': 0,
 				'class-name-format': 0,
 				'final-newline': 0,
 				'no-transition-all': 0,
 				'hex-notation': 0,
+				'no-trailing-whitespace': 0,
 				'nesting-depth': 0,
 				'empty-line-between-blocks': 0,
 				'property-sort-order': 0,

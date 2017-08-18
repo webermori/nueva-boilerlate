@@ -1,0 +1,24 @@
+.u-fixLightSlider:not(.lightSlider) {
+	img {
+		position: absolute;
+		top: 0;
+		left: 0; 
+		display: none;
+	}
+}
+
+.u-fixSlick:not(.slick-initialized) {
+	img {
+		position: absolute;
+		top: 0;
+		left: 0; 
+		display: none;
+	}
+}
+
+.sticky-wrapper {
+    @include min-lg {
+    	height: 90px!important;
+    }
+    background: #f2f2f2; 
+}

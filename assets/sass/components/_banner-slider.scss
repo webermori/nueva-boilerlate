@@ -1,0 +1,24 @@
+.BannerSlider {
+    position: relative;
+    overflow: hidden;
+    background: $color-1;
+    max-height: 450px;
+    margin-bottom: 0!important;
+    
+    &-stage {
+        position: relative;
+        left: 50%;
+        display: block;
+        max-width: 1920px;
+        transform: translate(-50%, 0);
+        overflow: hidden; 
+        img {
+            display: block;
+        }
+        @media (max-width: 1920px) {
+            width: 200%;
+        }
+    }
+
+    @extend .u-fixSlick;
+}

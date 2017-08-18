@@ -4,28 +4,14 @@ require(['./config'], function(config) {
 			'use strict';
 
 			function init() {
-				facebook();
-				general();
-
-				require(['uikit']);
-				//require(['bundle']);
+				headerSticky();
 
 				// Media Queries
 	            require(['enquire'], function (enquire) {
 	                enquire.register("screen and (max-width:991px)", {
 	                    match: function () {
 	                        //MOBILE
-	                        
-	                        //scrollUp();
-
-	                        slideOut();
-
-	                        require(['navAccordion'], function(){
-								jQuery('.menu-mobile').navAccordion({
-									expandButtonText: '<i class="icon icon-down-slim"></i>',  //Text inside of buttons can be HTML
-									collapseButtonText: '<i class="icon icon-up-slim"></i>'
-								});
-							});
+	                        sidebarMenu();
 	                    }
 	                });
 
@@ -45,18 +31,37 @@ require(['./config'], function(config) {
 	                case "home":
 	                    sliderHome();
 						home();
-						console.log('Home');
+						tabs();
+	                	break;
 
+	                case "company":
+	                	modalGallery();
+	                	break;
+
+	                case "product":
+	                	modalGallery();
+	                	break;
+	                case "technical-evaluation":
+	                	lightSlider();
+	                	sliderContent();
+	                	break;
+
+	                case "faq":
+	                	accordion();
+	                	break;
+
+	                case "budget":
+	                	buscaCep();
+	                	mask();
+	                	valida();
 	                	break;
 
 	                case "contato":
-	                    require(['maps', 'recaptcha']);
-						parsley();
+	                    recaptcha();
+	                    googleMaps();
+						valida();
+						mask();
 	               		break;
-
-	                default:
-	                	console.log('Seção Nula ' + section);
-	                	break;
 	            }
 
 	            //Media Queries Vanilla JS
@@ -72,8 +77,8 @@ require(['./config'], function(config) {
 			};
 		}());
 
-		(function() {
+		$(function() {
 			app.init();
-		}());
+		});
 	});
 });

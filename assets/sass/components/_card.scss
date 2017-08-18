@@ -1,0 +1,28 @@
+.Card {
+	position: relative;
+	overflow: hidden; 
+	&-info {
+		margin-bottom: 20px;
+		position: relative;
+	}
+	&-title {
+		@extend .h2;
+		color: #666; 
+		font-weight: 600; 
+	}
+	&-button {
+		@extend .btn;
+		@extend .btn-outline-primary;
+		text-transform: uppercase;
+    	font-weight: 600;
+	}
+	&-link {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	&-figure {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

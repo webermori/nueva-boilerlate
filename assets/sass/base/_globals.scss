@@ -1,0 +1,38 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6D6D6D; 
+    line-height: 1.6;
+    min-width: 300px;
+    background: #fff; 
+}
+
+* {
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    &[type='search'] {
+        box-sizing: border-box;
+    }
+}
+
+::selection {
+    color: #fff;
+    background-color: $color-1;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+img {
+    display: inherit;
+    max-width: 100%;
+}

@@ -1,0 +1,20 @@
+.form {
+	&__section {
+		margin-bottom: 20px;
+	}
+	&__link-cep {
+		font-size: 12px;
+		padding: 12px 0 0;
+		display: inline-block;
+		&:hover {
+			text-decoration: underline; 
+		}
+	}
+}
+textarea.u-expandTextarea {
+	@extend %transition;
+	height: 150px; 
+	&:focus {
+		height: 350px;
+	}
+}

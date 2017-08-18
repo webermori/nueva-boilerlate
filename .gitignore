@@ -8,7 +8,9 @@
 /node_modules
 /bower_components
 
-/app/@init.php
-/app/admin/@init.php
+@init.php
+admin/@init.php
 
-/app/__logs
+__logs
+
+linters/

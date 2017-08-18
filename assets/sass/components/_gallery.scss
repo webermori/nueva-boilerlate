@@ -1,0 +1,20 @@
+.Gallery {
+    &-mainFigure {
+		display: block;
+		margin: 0 auto 15px;
+		img {
+			width: 100%; 
+		}
+    }
+    &-thumbs {
+    	@extend .u-grid;
+    }
+
+    &-thumbLink {
+    	@extend .u-grid__4--liquid;
+		
+		&:hover {
+			box-shadow: 0 1px 2px #999; 
+		}
+    }
+}

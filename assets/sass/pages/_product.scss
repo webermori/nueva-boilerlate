@@ -1,0 +1,11 @@
+.product {
+	&-title {
+		@extend .display-4;
+	}
+    &-desc {
+        padding-top: 10px;
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
+}

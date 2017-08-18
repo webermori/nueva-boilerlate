@@ -12,7 +12,8 @@ gulp.task('default', function() {
 /*----------  CSS  ----------*/
 
 gulp.task('css', function(callback) {
-	runSequence('sass-lint', ['sass'], 'watch', callback);
+	//runSequence('sass-lint', ['sass'], 'watch', callback);
+	runSequence('clean-css', ['sass'], 'watch', callback);
 });
 
 

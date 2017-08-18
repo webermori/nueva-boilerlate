@@ -1,0 +1,78 @@
+.u-hidden {
+    @extend %visuallyhidden;
+}
+
+.u-bold {
+    font-weight: 700; 
+}
+
+.link {
+    transition: background .3s ease;
+    &:hover {
+        color: #fff;
+        background: $color-1;
+    }
+}
+
+.page__picture {
+    display: table;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.list {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    li {
+        margin-bottom: 10px;
+        list-style-position: outside;
+        list-style-type: disc;
+    }
+}
+
+.dl {
+    dd {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.parsley-errors-list {
+    font-size: 11px;
+    margin: 5px 0 10px;
+    color: $color-alert;
+    list-style: none;
+    padding: 0;
+}
+
+.form-action {
+    margin-top: 20px;
+}
+
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--top {
+        align-self: flex-start;
+    }
+
+    &--bottom {
+        align-self: flex-end;
+    }
+}
+
+.u-centerContent {
+    text-align: center;
+}
+
+.u-arrowRight {
+    &:before {
+        content: "►";
+        color: #999;
+        font-size: 10px;
+        margin-right: 2px;
+    }
+}

@@ -1,0 +1,22 @@
+.CompanyInfo {
+	&-icon {
+		width: 30px;
+		height: 30px;
+		fill: $color-1; 
+		margin-right: 10px;
+	}
+	&-title {
+		font-size: 18px;
+		text-transform: uppercase; 
+		display: flex;
+		align-items: center;
+		color: $color-1; 
+		//padding-bottom: 10px;
+		//border-bottom: 1px solid #ddd; 
+		//margin-bottom: 15px;
+	}
+	&-content {
+		padding-left: 40px;
+		color: #666; 
+	}
+}

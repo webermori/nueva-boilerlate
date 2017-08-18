@@ -1,44 +1,63 @@
 <div class="footer-container">
 	<div class="container">
-        <div class="row">
-            <div class="col-md-8">
-            	Teste
-            </div>
-            <div class="col-md-8">
-            	<div class="custom-face-page">
-                    <a href="https://www.facebook.com/RenaultVipcar" target="_blank" title="Adicione-nos no Facebook"><i class="icon-facebook"></i></a>
-                    <div class="custom-face-page__head">
-                        <h4 class="custom-face-page__title">Nueva no Facebook</h4>
-
-                        <div class="custom-face-page__like-btn">
-                            <div class="fb-like" data-href="https://www.facebook.com/RenaultVipcar/" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-                        </div>
-                    </div>                    
-
-                    <div class="custom-face-page__fb-page">
-                         <div class="fb-page" data-href="https://www.facebook.com/RenaultVipcar/" data-small-header="true" data-adapt-container-width="auto" data width="500" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/RenaultVipcar/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/RenaultVipcar/">Nueva</a></blockquote></div>
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer-brand">
+                        <img src="images/logo-uni-plasticos-invert.png" class="footer-brand__logo" alt="UNI Plásticos">
+                        <div class="footer-brand__desc">
+                            <p>Desde 1998 atuando na produção de tubetes de PVC.</p>  
+                        </div> 
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8">
-            	<ul class="social">
-                    <li><a href="https://www.facebook.com/" title="Adicione-nos no Facebook" uk-tooltip target="_blank"><i class="icon-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/" title="Siga-nos no Twitter" uk-tooltip target="_blank"><i class="icon-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/" title="Siga-nos no Instagram" uk-tooltip target="_blank"><i class="icon-instagram"></i></a></li>
-                </ul>
+                <div class="col-lg-3 hidden-md-down">
+                    <div class="footer-info">
+                        <h3 class="footer-info__title">UNI Plásticos</h3>  
+                        <div class="footer-info__desc">
+                            <ul class="footer-menu">
+                                <?php include "partials/menuItems.php" ?>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer-info">
+                        <h3 class="footer-info__title">Atendimento</h3>  
+                        <div class="footer-info__desc">
+                            <?php include "partials/contactInfo.php" ?>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer-info">
+                        <h3 class="footer-info__title">Localização</h3>  
+                        <div class="footer-info__desc">
+                            <div class="IconBox">
+                            <svg class="IconBox-icon" title="Endereço"><use xlink:href="#address"></use></svg>
+                                <div class="IconBox-content">
+                                    <address>Rua Beija Flor, 180 <br>
+                                    Cristo Redentor <br> Criciúma / SC <br>
+                                    CEP: 88801-970</address>
+                                    <span class="u-arrowRight"></span>
+                                    <a href="https://www.google.com.br/maps/dir//R.+Beija-Flor,+174+-+Cristo+Redentor,+Crici%C3%BAma+-+SC/@-28.7050377,-49.342769,17z/data=!4m16!1m7!3m6!1s0x952178cb8ff12477:0xad6b48d32f298a1!2sR.+Beija-Flor,+174+-+Cristo+Redentor,+Crici%C3%BAma+-+SC!3b1!8m2!3d-28.7050377!4d-49.3405803!4m7!1m0!1m5!1m1!1s0x952178cb8ff12477:0xad6b48d32f298a1!2m2!1d-49.3405803!2d-28.7050377" target="_blank" class="link-mapa">Como chegar</a>
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
             </div>
         </div>
 	</div>
 </div>
 <div class="footer-bottom-container">
 	<div class="container">
-		<footer class="footer">
+		<footer class="footer-bottom">
 	        <div class="row">
-	            <div class="col-md-16">
-	                <p class="copyrights">©<?php Date('Y') ?> Nueva - Todos os direitos reservados.</p>
+	            <div class="col-sm-8">
+	                <p class="footer-bottom__copyrights">©2017. <strong>UNI Plásticos</strong> - Todos os direitos reservados.</p>
 	            </div>
-	            <div class="col-md-8">
-	                <a href="http://www.agencianueva.com.br/" class="nueva" target="_blank" title="Nueva - Revolução Criativa" uk-tooltip><img src="images/logo-nueva-wh.svg" alt="Nueva - Revolução Criativa" /></a>
+	            <div class="col-sm-4">
+	                <a href="http://www.agencianueva.com.br/" class="footer-bottom__nueva" target="_blank" title="Agência Nueva - Revolução Criativa" uk-tooltip><img src="images/logo-nueva-wh.svg" alt="Agência Nueva - Revolução Criativa" /></a>
 	            </div>
 	        </div>
 	    </footer>

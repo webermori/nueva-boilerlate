@@ -1,0 +1,14 @@
+%title-dot {
+	&:before {
+		content: "■";
+	    color: #0B7CCF;
+	    margin-right: 5px;
+	    font-size: 13px;
+	    position: relative;
+	    top: -2px;
+	}
+}
+
+%transition {
+	 transition: ease all 0.3s;
+}

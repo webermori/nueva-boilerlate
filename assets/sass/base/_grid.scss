@@ -1,0 +1,42 @@
+.u-grid {
+    display: block;
+    //display: inline-block;
+    //width: 100%; 
+    @include grid-container;
+    @include min-md {
+        margin-left: -15px; 
+        margin-right: -15px;
+    }
+    &__2 {
+        @include min-md {
+            @include grid-column(6);
+        }
+    }
+    &__3 {
+        @include min-md {
+            @include grid-column(4);
+        }
+    }
+    &__4--liquid {
+        @include grid-column(3);
+    }
+    &__4 {
+        margin-bottom: 20px;
+        @include min-md {
+            @include grid-column(6);
+        }
+        @include min-lg {
+            @include grid-column(3);
+        }
+    }
+    &__5 {
+        @include min-md {
+            @include grid-column(2);
+        }
+    }
+    &__6 {
+        @include min-lg {
+            @include grid-column(1);
+        }
+    }
+} 

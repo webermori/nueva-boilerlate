@@ -1,0 +1,106 @@
+.side-nav {
+    //display: none;
+    .side-nav-logo {
+        margin: 20px auto;
+        display: table;
+    }
+    .side-nav__box {
+        padding: 20px;
+    }
+
+    .contact-info {
+        > li {
+            margin-bottom: 10px;
+            
+            .IconBox-icon {
+                color: $color-1;
+            }
+        }
+    }
+}
+
+
+/* Left Navigation
+-----------------------------------------------*/
+
+.menu-mobile {
+    background: #fff;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    
+    .accordion-btn-wrap {
+        width: 100%!important;
+        text-align: right!important;
+        font-size: 18px; 
+        padding-right: 20px;
+    }
+    .menu-mobile__sub {
+        line-height: 50px;
+        padding-left: 20px;
+    }
+    ul {
+        border-bottom: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            border-top: 1px solid #eee;
+            a {
+                display: block;
+                line-height: normal;
+                padding: 15px 20px;
+                color: #999;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        ul {
+            background: #f0f0f0; 
+            li {
+                border-color: #ddd;
+                a {
+                    color: #666;
+                    padding-left: 20px;
+                }
+                ul {
+                    li {
+                        border-color: #666;
+                        a {
+                            background: #444;
+                            color: #ccc;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.accordion-btn-wrap {
+    line-height: 50px;
+}
+
+ul {
+    li {
+        &.has-subnav {
+            .accordion-btn {
+                color: #999;
+                background: transparent;
+                font-size: 22px;
+                line-height: 50px;
+                display: block;
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 1024px) {
+//  .menu-mobile {width: 40%;}
+// }
+// @media screen and (max-width: 700px) {
+//  .menu-mobile {width: 100%;}
+// }

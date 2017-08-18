@@ -1,0 +1,15 @@
+.home {
+    .main {
+        @extend .bg-faded;
+    }
+    .slider-home-container {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        @include min-md {
+            margin-bottom: 40px;
+            border-bottom: 2px solid $color-1;
+            background: #111;
+        }
+    }
+}

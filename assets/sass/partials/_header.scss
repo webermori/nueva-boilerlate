@@ -1,0 +1,84 @@
+.is-sticky {
+    .header {
+        z-index: 1000!important;
+        box-shadow: 0 0px 3px #ccc;
+        @include min-lg {
+            padding: 0;
+            min-height: 50px;
+            transition: ease height 0.3s; //border-top: 3px solid $color-1;
+        }
+        &__logo {
+            padding: 0;
+            transition: ease all 0.4s;
+            @include min-lg {
+                transform: scale(0.7);
+                margin-left: -5%;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+    .btn-menu-mobile {
+        top: 0px;
+    }
+}
+
+.header {
+    position: relative;
+    z-index: 10;
+    padding: 10px 0;
+    color: #666;
+    background: #f2f2f2;
+    transition: ease padding 0.4s;
+    @include min-md {
+        border-top: inherit;
+    }
+
+    &__logo {
+        max-width: 80px;
+        display: inline-block;
+        margin: 0;
+        float: left;
+        transition: ease all 0.4s;
+        @include min-lg {
+            max-width: inherit;
+            padding: 8px 4px;
+        }
+    }
+    .btn-menu-mobile {
+        position: relative;
+        float: right;
+        top: 7px;
+
+        &__icon {
+            height: 30px;
+            width: 30px;
+            fill: $color-1;
+        }
+
+        @include min-md {
+            top: 7px;
+            color: $color-1;
+        }
+        @include min-lg {
+            display: none;
+        }
+    }
+}
+
+.header__logo-container {
+    margin: 0;
+    @include min-md {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 250px;
+        height: 145px;
+        margin: 0;
+        padding: 30px 0 0;
+        text-align: center;
+        background: url('../images/logo-container.png') no-repeat;
+    }
+}
