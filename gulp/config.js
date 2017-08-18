@@ -13,7 +13,7 @@ module.exports = {
         src: [
             src + '/js'
         ],
-        outputName: prefix + 'applications.js',
+        outputName: prefix + '-app.js',
         dest: './js'
     },
 

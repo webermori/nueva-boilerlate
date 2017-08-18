@@ -19,7 +19,7 @@ gulp.task('build-scripts', function() {
 });
 
 //Vendor generate
-gulp.task('js-vendor', function() {
+gulp.task('build-js-vendor', function() {
 	return gulp.src([
 		'./node_modules/jquery/dist/jquery.min.js',
 		'./node_modules/npm-modernizr/modernizr.js',

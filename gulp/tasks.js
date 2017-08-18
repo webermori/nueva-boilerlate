@@ -27,6 +27,10 @@ gulp.task('js-lib', function(callback) {
 	runSequence('clean-js-lib', 'clone-js-lib', 'build-scripts', callback);
 });
 
+gulp.task('js-vendor', function(callback) {
+	runSequence('clean-js-vendor', 'build-js-vendor', callback);
+});
+
 
 /*----------  IMAGES  ----------*/
 
@@ -50,3 +54,9 @@ gulp.task('favicon', function(callback) {
 gulp.task('css-deploy', function() {
     gulp.start('css-prod');
 });
+
+/*----------  INITIAL TASK  ----------*/
+
+// gulp.task('start', function() {
+//     gulp.start('js-vendor');
+// });
