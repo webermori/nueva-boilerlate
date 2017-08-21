@@ -38,12 +38,12 @@ gulp.task('clone-js-lib', function() {
 		'./node_modules/superfish/dist/js/superfish.min.js',
 		'./node_modules/superfish/dist/js/hoverIntent.js',
 		'./node_modules/responsive-tabs/js/jquery.responsiveTabs.min.js',
-		'./node_modules/semantic-ui/dist/components/accordion.min.js',
+		'./bower_components/semantic/dist/components/accordion.min.js',
+		'./bower_components/semantic/dist/components/sidebar.min.js',
 		'./node_modules/lightslider/dist/js/lightslider.min.js',
 		'./node_modules/lightgallery/dist/js/lightgallery.min.js',
 		'./node_modules/lightgallery/modules/lg-thumbnail.min.js',
 		'./node_modules/jquery-sticky/jquery.sticky.js',
-		'./node_modules/semantic-ui/dist/components/sidebar.min.js',
 		'./node_modules/gmap3/dist/gmap3.min.js',
 		'./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js'
 	])

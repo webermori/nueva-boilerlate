@@ -21,7 +21,9 @@
                     </section>
 
                     <div class="main">
-                        <h1>Home</h1>
+                        <div class="container">
+                            <h1>Home</h1>
+                        </div>
                     </div>
                 </main>
                 <?php include "_footer.php" ?>
