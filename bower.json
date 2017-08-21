@@ -1,0 +1,20 @@
+{
+  "name": "uniplasticos",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Agência Nueva"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "Semantic-UI#^2.2.13"
+  }
+}
