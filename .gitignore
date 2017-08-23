@@ -14,3 +14,4 @@ admin/@init.php
 __logs
 
 linters/
+/.vscode

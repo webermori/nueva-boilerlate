@@ -7,11 +7,11 @@
 		}
     }
     &-thumbs {
-    	@extend .u-grid;
+    	@extend .grid;
     }
 
     &-thumbLink {
-    	@extend .u-grid__4--liquid;
+    	@extend .grid__4--liquid;
 		
 		&:hover {
 			box-shadow: 0 1px 2px #999; 
