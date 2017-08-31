@@ -1,7 +1,8 @@
 <ul class="contact-info">
     <li>
         <div class="IconBox">
-            <svg class="IconBox-icon" title="Telefone comercial"><use xlink:href="#phone-call"></use></svg>
+            <svg class="IconBox-icon" title="Telefone comercial"><use xlink:href="#phone"></use></svg>
+           
             <div class="IconBox-content">
                 <div class="Tel">
                     <span class="Tel-ddd">(48)</span>
@@ -20,7 +21,7 @@
     </li>
     <li>
         <div class="IconBox">
-            <svg class="IconBox-icon" title="Horário de atendimento"><use xlink:href="#clock-outline"></use></svg>
+            <svg class="IconBox-icon" title="Horário de atendimento"><use xlink:href="#time"></use></svg>
             <div class="IconBox-content">
                 8:00 às 12:00 - 13:30 às 18:00 
                 <br><span class="small">(de segunda à sexta-feira)</span>

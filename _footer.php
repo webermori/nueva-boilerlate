@@ -4,15 +4,15 @@
             <div class="row">
                 <div class="col-md-4 col-lg-3">
                     <div class="footer-brand">
-                        <img src="images/logo-uni-plasticos-invert.png" class="footer-brand__logo" alt="UNI Plásticos">
+                        <img src="images/logo-company-inverse.png" class="footer-brand__logo" alt="Company">
                         <div class="footer-brand__desc">
-                            <p>Desde 1998 atuando na produção de tubetes de PVC.</p>  
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptatum enim a tempore atque mollitia.</p>  
                         </div> 
                     </div>
                 </div>
                 <div class="col-lg-3 hidden-md-down">
                     <div class="footer-info">
-                        <h3 class="footer-info__title">UNI Plásticos</h3>  
+                        <h3 class="footer-info__title">Company</h3>  
                         <div class="footer-info__desc">
                             <ul class="footer-menu">
                                 <?php include "partials/menuItems.php" ?>
@@ -54,7 +54,7 @@
 		<footer class="footer-bottom">
 	        <div class="row">
 	            <div class="col-sm-8">
-	                <p class="footer-bottom__copyrights">©2017. <strong>UNI Plásticos</strong> - Todos os direitos reservados.</p>
+	                <p class="footer-bottom__copyrights">©<?php echo Date('Y') ?>. <strong>Company</strong> - Todos os direitos reservados.</p>
 	            </div>
 	            <div class="col-sm-4">
 	                <a href="http://www.agencianueva.com.br/" class="footer-bottom__nueva" target="_blank" title="Agência Nueva - Revolução Criativa" uk-tooltip><img src="images/logo-nueva-wh.svg" alt="Agência Nueva - Revolução Criativa" /></a>
