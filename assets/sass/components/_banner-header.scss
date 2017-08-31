@@ -1,0 +1,33 @@
+.BannerHeader {
+    @extend .section;
+    color: #fff;
+    background-color: $color-1;
+    background-image: none; 
+    @include min-lg {
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 290px;
+        background-image: inherit; 
+    }
+    &--center {
+        text-align: center; 
+    }
+    &__title {
+        @extend .display-2;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    &__desc {
+        @include min-lg {
+            max-width: 410px;
+        }
+    }
+    &__infobox {
+        @include min-lg {
+            display: inline-block;
+            max-width: 700px;
+            margin-top: 40px;
+            //padding-left: 50px;
+        }
+    }
+}

@@ -6,6 +6,17 @@
         <div id="panel" class="panel">
             <?php include "_header.php" ?>
             <main data-custom-js="product" class="main product">
+                <section class="BannerHeader">
+                    <div class="container">
+                        <div class="BannerHeader__infobox">
+                            <h1 class="BannerHeader__title">Contato</h1>
+                            <div class="BannerHeader__desc">
+                                <p>Para melhor atendê-lo, a Embalagens Urussanga conta com representantes especializados, que atendem em diversas regiões do Brasil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="section">
                     <div class="container">
                         <ol class="breadcrumb">

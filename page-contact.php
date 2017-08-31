@@ -7,6 +7,18 @@
         	<div id="panel" class="panel">
     	        <?php include "_header.php" ?>
     	        <main data-page="controller" data-custom-js="contato" class="contact">
+                    <section class="BannerHeader">
+                        <div class="container">
+                            <div>Home > Central de Atendimento</div>
+                            <div class="BannerHeader__infobox">
+                                <h1 class="BannerHeader__title">Contato</h1>
+                                <div class="BannerHeader__desc">
+                                    <p>Para melhor atendê-lo, a Embalagens Urussanga conta com representantes especializados, que atendem em diversas regiões do Brasil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     <section>
                         <div class="main">
                             <div class="container">
@@ -69,7 +81,7 @@
                                         <div class="contact__heading-text">
                                              <p>Entre em contato com a nossa equipe preenchendo os campos abaixo.</p>
                                         </div>
-                                        <div class="container-contact-form">
+                                        <div class="contact-form-container">
                                             <form action="" data-ajax-action="" method="post" id="formContact" class="contact-form valida-form">
                                                 <input type="hidden" name="contato_enviado" value="sim">
                                                 <div class="u-grid">

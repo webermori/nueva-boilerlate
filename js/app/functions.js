@@ -9,6 +9,7 @@ function clientsCarousel() {
 		
 		$('.js-client-carousel').slick({
 		  dots: true,
+		  arrows: true,
 		  infinite: false,
 		  speed: 300,
 		  slidesToShow: 5,
@@ -79,7 +80,7 @@ function sliderHome() {
 		$('#js-sliderHome').slick({
 			dots: true,
 			infinite: true,
-			arrows: false,
+			arrows: true,
 			speed: 500,
 			autoplay: true,
 			autoplaySpeed: 4000,

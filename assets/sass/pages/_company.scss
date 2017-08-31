@@ -1,3 +1,24 @@
 .company {
-	
+    &-concepts {
+        margin-bottom: 20px;
+        @extend .col-lg-4;
+        @include min-lg {
+            margin-bottom: 0;
+        }
+        &-container {
+            @extend .section;
+            background: $color-2;
+            color: #FFF;
+        }
+        &__title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        &__desc {
+            font-size: 13px;
+        }
+    }
 }

@@ -3,6 +3,7 @@
 }
 
 .contact {
+
     &__heading-text {
         margin-bottom: 20px;
     }
@@ -14,6 +15,13 @@
         max-width: 360px;
         &__item {
             margin-bottom: 40px;
+        }
+    }
+
+    &-form {
+        &-container {
+            background: $color-2; 
+            padding: 20px;
         }
     }
 }
