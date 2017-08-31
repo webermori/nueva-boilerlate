@@ -1,5 +1,5 @@
 <section id="menuMobile" class="side-nav ui sidebar vertical menu">
-	<img src="images/logo-uni-plasticos.png" alt="UNI Plásticos" class="side-nav-logo">
+	<img src="images/logo-company.png" alt="Company" class="side-nav-logo">
 	<nav class="menu-mobile">
 		<ul>
 			<?php include "menuItems.php" ?>

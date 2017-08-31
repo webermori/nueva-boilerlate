@@ -7080,6 +7080,25 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       .slick-skin-2 .slick-dots .slick-active button:hover, .home .clientsCarousel .slick-dots .slick-active button:hover {
         cursor: default; }
 
+.u-fixLightSlider:not(.lightSlider) img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; }
+
+.u-fixSlick:not(.slick-initialized) img, .BannerSlider:not(.slick-initialized) img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; }
+
+.sticky-wrapper {
+  height: 100%;
+  background: #f2f2f2; }
+  @media only screen and (min-width: 992px) {
+    .sticky-wrapper {
+      height: 90px !important; } }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -7420,7 +7439,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   .header .btn-menu-mobile {
     position: relative;
     float: right;
-    top: 7px; }
+    top: 4px; }
     .header .btn-menu-mobile__icon {
       height: 30px;
       width: 30px;
@@ -7540,24 +7559,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .info-block {
   background: #FFF; }
-
-.u-fixLightSlider:not(.lightSlider) img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none; }
-
-.u-fixSlick:not(.slick-initialized) img, .BannerSlider:not(.slick-initialized) img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none; }
-
-.sticky-wrapper {
-  background: #f2f2f2; }
-  @media only screen and (min-width: 992px) {
-    .sticky-wrapper {
-      height: 90px !important; } }
 
 .side-nav .side-nav-logo {
   margin: 20px auto;

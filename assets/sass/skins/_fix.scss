@@ -17,6 +17,7 @@
 }
 
 .sticky-wrapper {
+	height: 100%; 
     @include min-lg {
     	height: 90px!important;
     }

@@ -16,8 +16,9 @@
 @import 'vendors/lightslider';
 @import 'vendors/lightgallery';
 
-//Skins
+//Vendor Skins
 @import 'skins/slick-theme';
+@import 'skins/fix';
 
 //Base
 @import 'base/reset';
@@ -34,7 +35,6 @@
 @import 'partials/header';
 @import 'partials/footer';
 @import 'partials/layout';
-@import 'partials/fix';
 @import 'partials/menu-mobile';
 @import 'partials/form';
 
