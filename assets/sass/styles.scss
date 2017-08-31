@@ -30,7 +30,7 @@
 //Distribuition Folder (Generated from Gulp)
 @import 'dist/sprite';
 
-//Layout
+//Partials
 @import 'partials/header';
 @import 'partials/footer';
 @import 'partials/layout';
@@ -38,16 +38,18 @@
 @import 'partials/menu-mobile';
 @import 'partials/form';
 
+//Layout
+@import 'layouts/services-related';
+
 //Components
 @import 'components/components';
 @import 'components/banner-slider';
 @import 'components/slide-content';
 @import 'components/responsive-tabs';
-@import 'components/overlay';
+@import 'components/overlay-1';
 @import 'components/card';
 @import 'components/main-menu';
 @import 'components/company-info';
-@import 'components/specifications-list';
 @import 'components/shelf';
 @import 'components/gallery';
 @import 'components/icon-box';

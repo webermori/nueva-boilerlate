@@ -1,10 +1,21 @@
-$color-1: #0B7CCF; //Primary Color
+$color-2: #56c4c4;
+$color-1: #455a64;
+$color-1-lighter: #ECEFF1;
+$color-1-lightest: #B0BEC5;
+$color-1-light: #90a4ae;
+$color-1-dark: #263238;
+$color-1-darkest: #455a64;
+$color-1-darker: #1D262B;
 
+$smoke: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) );
+
+$color-grey: #ddd;
+$grey: #f0f0f0;
 $color-alert: #f00;
 
-$grey: #f0f0f0;
+$grey-lighten: #ECEFF1;
 
 $neat-grid: (
   columns: 12,
-  gutter: 15px,
+  gutter: 30px,
 );

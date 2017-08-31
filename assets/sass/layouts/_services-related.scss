@@ -1,0 +1,22 @@
+.l-services {
+    &__related {
+        @extend .section;
+        background: #ccc; 
+        &__title {
+            @extend .h3;
+            font-weight: 800;
+            color: $color-1;
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            &-container {
+                @extend .grid;
+            }
+            @extend .grid__3;
+            //width: 33.33%;
+            display: inline-block;
+            float: left;
+        }
+    }
+}

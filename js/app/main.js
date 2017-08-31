@@ -32,6 +32,7 @@ require(['./config'], function(config) {
 	                    sliderHome();
 						home();
 						tabs();
+						clientsCarousel();
 	                	break;
 
 	                case "company":

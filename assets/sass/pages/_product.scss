@@ -8,4 +8,12 @@
             margin-bottom: 30px;
         }
     }
+
+    &-related {
+    	&__title {
+    		color: $color-2;
+    		font-weight: 700;
+    		margin-bottom: 20px;  
+    	}
+    }
 }

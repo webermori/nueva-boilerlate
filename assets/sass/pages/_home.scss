@@ -12,4 +12,22 @@
             background: #111;
         }
     }
+
+    &-clients {
+        @extend .section;
+        &-title {
+            font-size: 30px;
+            color: color-1;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+    }
+    
+    .clientsCarousel {
+        @extend .slick-skin-2;
+        &__item {
+            padding: 15px;
+        }
+    }
 }
