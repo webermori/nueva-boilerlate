@@ -1,5 +1,5 @@
 //Core
-.Overlay {
+.Overlay2 {
     overflow: hidden;
     position: relative;
     cursor: default;
@@ -41,27 +41,27 @@
     }
 
      &:hover {
-        .Overlay-mask {
+        .Overlay2-mask {
             -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
             filter: alpha(opacity=100);
             opacity: 1;
         }
-        .Overlay-title,
-        .Overlay-desc {
+        .Overlay2-title,
+        .Overlay2-desc {
             -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
             filter: alpha(opacity=100);
             opacity: 1;
             transform: translateY(0px);
         }
-        .Overlay-desc {
+        .Overlay2-desc {
             transition-delay: 0.1s;
         }
     }
 }
 
 //Skins
-.Overlay--big {
-    .Overlay-mask {
+.Overlay2--big {
+    .Overlay2-mask {
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
         filter: alpha(opacity=0);
         opacity: 0;
@@ -70,7 +70,7 @@
         padding: 20px 40px;
     }
 
-    .Overlay-title {
+    .Overlay2-title {
         transform: translateY(-100px);
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
         filter: alpha(opacity=0);
@@ -81,7 +81,7 @@
          @extend .title-1;
     }
 
-    .Overlay-desc {
+    .Overlay2-desc {
         transform: translateY(100px);
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
         filter: alpha(opacity=0);
@@ -89,14 +89,14 @@
         transition: all 0.2s linear;
     }
 
-    &:hover .Overlay-figure {
+    &:hover .Overlay2-figure {
         transform: scale(1.2);
         filter: grayscale(1) blur(3px);
     }
 }
 
-.Overlay--small {
-    .Overlay-mask {
+.Overlay2--small {
+    .Overlay2-mask {
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
         filter: alpha(opacity=0);
         opacity: 0;
@@ -106,7 +106,7 @@
         padding: 15px;
     }
 
-    .Overlay-title {
+    .Overlay2-title {
         transform: translateY(-100px);
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
         filter: alpha(opacity=0);
@@ -122,7 +122,7 @@
         margin: 0;
     }
 
-    &:hover .Overlay-figure {
+    &:hover .Overlay2-figure {
         // transform: scale(1.2);
         // filter: grayscale(1) blur(0);
     }

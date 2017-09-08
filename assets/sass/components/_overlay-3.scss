@@ -1,5 +1,5 @@
 //Core
-.Overlay1 {
+.Overlay3 {
     overflow: hidden;
     position: relative;
     cursor: default;
@@ -47,6 +47,9 @@
         bottom: 10px;
         line-height: 1;
         margin: 0 0 5px;
+        position: absolute;
+        bottom: 20px;
+        transition: ease all 0.3s;
     }
 
     &-desc {
@@ -57,7 +60,12 @@
     }
 
     &:hover {
-        .Overlay1 {
+        .Overlay3 {
+
+            &-title {
+                bottom: inherit;
+                top: 20px; 
+            }
 
             &-figure {
                 transform: scale(1.15);

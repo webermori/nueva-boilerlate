@@ -64,5 +64,5 @@
 	</div>
 </div>
 <div class="hidden-xs-up">
-    <?php include "images/svg-sprite/symbol/svg/sprite.symbol.svg" ?>
+    <?php echo file_get_contents("images/svg-sprite/symbol/svg/sprite.symbol.svg") ?>
 </div>

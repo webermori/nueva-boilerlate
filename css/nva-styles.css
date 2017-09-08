@@ -7788,13 +7788,13 @@ textarea.u-expandTextarea {
   .r-tabs .r-tabs-accordion-title {
     display: block; } }
 
-.Overlay {
+.Overlay1 {
   overflow: hidden;
   position: relative;
   cursor: default;
   display: table;
   margin: 0 auto 20px; }
-  .Overlay-mask {
+  .Overlay1-mask {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -7811,13 +7811,13 @@ textarea.u-expandTextarea {
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     padding: 15px; }
-  .Overlay-figure {
+  .Overlay1-figure {
     display: block;
     position: relative;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear; }
-  .Overlay-info {
+  .Overlay1-info {
     -webkit-transform: translateY(40px);
     -ms-transform: translateY(40px);
     transform: translateY(40px);
@@ -7831,34 +7831,115 @@ textarea.u-expandTextarea {
     left: 0;
     width: 100%;
     padding: 10px 20px; }
-  .Overlay-title {
+  .Overlay1-title {
     color: #fff;
     font-size: 20px;
     font-weight: 800;
     bottom: 10px;
     line-height: 1;
     margin: 0 0 5px; }
-  .Overlay-desc {
+  .Overlay1-desc {
     opacity: 0;
     font-size: 13px;
     color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-  .Overlay:hover .Overlay-figure {
+  .Overlay1:hover .Overlay1-figure {
     -webkit-transform: scale(1.15);
     -ms-transform: scale(1.15);
     transform: scale(1.15);
     -webkit-filter: brightness(1.2) contrast(1.2) blur(4px);
     filter: brightness(1.2) contrast(1.2) blur(4px); }
-  .Overlay:hover .Overlay-mask {
+  .Overlay1:hover .Overlay1-mask {
     opacity: 1; }
-  .Overlay:hover .Overlay-info {
+  .Overlay1:hover .Overlay1-info {
     opacity: 1;
     -webkit-transform: translateY(0px);
     -ms-transform: translateY(0px);
     transform: translateY(0px); }
-  .Overlay:hover .Overlay-desc {
+  .Overlay1:hover .Overlay1-desc {
+    opacity: 1; }
+
+.Overlay3 {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  display: table;
+  margin: 0 auto 20px; }
+  .Overlay3-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 32%, rgba(0, 0, 0, 0.72) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(32%, transparent), to(rgba(0, 0, 0, 0.72)));
+    background: -o-linear-gradient(top, transparent 0%, transparent 32%, rgba(0, 0, 0, 0.72) 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 32%, rgba(0, 0, 0, 0.72) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b8000000', GradientType=0);
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    padding: 15px; }
+  .Overlay3-figure {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .Overlay3-info {
+    -webkit-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 0.8;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px; }
+  .Overlay3-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    bottom: 10px;
+    line-height: 1;
+    margin: 0 0 5px;
+    position: absolute;
+    bottom: 20px;
+    -webkit-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    transition: ease all 0.3s; }
+  .Overlay3-desc {
+    opacity: 0;
+    font-size: 13px;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .Overlay3:hover .Overlay3-title {
+    bottom: inherit;
+    top: 20px; }
+  .Overlay3:hover .Overlay3-figure {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-filter: brightness(1.2) contrast(1.2) blur(4px);
+    filter: brightness(1.2) contrast(1.2) blur(4px); }
+  .Overlay3:hover .Overlay3-mask {
+    opacity: 1; }
+  .Overlay3:hover .Overlay3-info {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }
+  .Overlay3:hover .Overlay3-desc {
     opacity: 1; }
 
 .Card {

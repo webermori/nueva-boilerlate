@@ -25,6 +25,41 @@
                             <h1>Home</h1>
                         </div>
 
+                        <section>
+                            <div class="container">
+                                <ul class="row no-gutters">
+                                    <li class="col-md-6">
+                                        <div class="Overlay3">
+                                            <a href="page-services.php" class="Overlay3-link">
+                                                <img  class="Overlay3-figure" src="https://api.fnkr.net/testimg/495x150/666666/FFF/?text=495x150">
+                                                <div class="Overlay3-mask">
+                                                    <h2 class="Overlay3-title">Onde estamos</h2>
+                                                    <div class="Overlay3-info">
+                                                        <p class="Overlay3-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam expedita earum velit ad tenetur eius, laudantium enim quibusdam architecto, error fugit amet, perferendis perspiciatis sint cumque. Possimus ullam, optio nulla.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-6">
+                                        <div class="Overlay3">
+                                            <a href="page-services.php" class="Overlay3-link">
+                                                <img  class="Overlay3-figure" src="https://api.fnkr.net/testimg/495x150/666666/FFF/?text=495x150">
+                                                <div class="Overlay3-mask">
+                                                    <div class="Overlay3-info">
+                                                        <h2 class="Overlay3-title">Pacote de viagens</h2>
+                                                        <p class="Overlay3-desc">Faça a viagem dos seus sonhos através dos melhores preços da Brasil Tropical</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+
                         <section class="home-clients">
                             <div class="container">
                             <h2 class="home-clients-title">Nossos Clientes</h2>
@@ -46,13 +81,13 @@
                                 <h2 class="l-services__related__title">Outros Serviços</h2>
                                 <ul class="l-services__related__item-container">
                                     <li class="l-services__related__item">
-                                        <div class="Overlay">
-                                            <a href="page-services.php" class="Overlay-link">
-                                                <img  class="Overlay-figure" src="https://api.fnkr.net/testimg/320x265/00CED1/FFF/?text=img+placeholder">
-                                                <div class="Overlay-mask">
-                                                    <div class="Overlay-info">
-                                                        <h2 class="Overlay-title">Pacote de viagens</h2>
-                                                        <p class="Overlay-desc">Serviço de busca rápida por passagens
+                                        <div class="Overlay1">
+                                            <a href="page-services.php" class="Overlay1-link">
+                                                <img  class="Overlay1-figure" src="https://api.fnkr.net/testimg/320x265/00CED1/FFF/?text=img+placeholder">
+                                                <div class="Overlay1-mask">
+                                                    <div class="Overlay1-info">
+                                                        <h2 class="Overlay1-title">Pacote de viagens</h2>
+                                                        <p class="Overlay1-desc">Serviço de busca rápida por passagens
                         por mais de 60 fornecedores</p>
                                                     </div>
                                                 </div>
@@ -60,27 +95,28 @@
                                         </div>
                                     </li>
                                     <li class="l-services__related__item">
-                                        <div class="Overlay">
-                                            <a href="page-services.php" class="Overlay-link">
-                                                <img  class="Overlay-figure" src="https://api.fnkr.net/testimg/320x265/00CED1/FFF/?text=img+placeholder">
-                                                <div class="Overlay-mask">
-                                                    <div class="Overlay-info">
-                                                        <h2 class="Overlay-title">Pacote de viagens</h2>
-                                                        <p class="Overlay-desc">Faça a viagem dos seus sonhos através dos melhores preços da Brasil Tropical</p>
+                                        <div class="Overlay1">
+                                            <a href="page-services.php" class="Overlay1-link">
+                                                <img  class="Overlay1-figure" src="https://api.fnkr.net/testimg/320x265/00CED1/FFF/?text=img+placeholder">
+                                                <div class="Overlay1-mask">
+                                                    <div class="Overlay1-info">
+                                                        <h2 class="Overlay1-title">Pacote de viagens</h2>
+                                                        <p class="Overlay1-desc">Serviço de busca rápida por passagens
+                        por mais de 60 fornecedores</p>
                                                     </div>
                                                 </div>
                                             </a>
                                         </div>
                                     </li>
                                     <li class="l-services__related__item">
-                                        <div class="Overlay">
-                                            <a href="page-services.php" class="Overlay-link">
-                                                <img  class="Overlay-figure" src="https://api.fnkr.net/testimg/320x265/00CED1/FFF/?text=img+placeholder">
-                                                <div class="Overlay-mask">
-                                                    <div class="Overlay-info">
-                                                        <h2 class="Overlay-title">Reserva em hotéis</h2>
-                                                        <p class="Overlay-desc">Serviço de busca rápida por reserva 
-                        em milhares de hotéis pelo mundo inteiro</p>
+                                        <div class="Overlay1">
+                                            <a href="page-services.php" class="Overlay1-link">
+                                                <img  class="Overlay1-figure" src="https://api.fnkr.net/testimg/320x265/00CED1/FFF/?text=img+placeholder">
+                                                <div class="Overlay1-mask">
+                                                    <div class="Overlay1-info">
+                                                        <h2 class="Overlay1-title">Pacote de viagens</h2>
+                                                        <p class="Overlay1-desc">Serviço de busca rápida por passagens
+                        por mais de 60 fornecedores</p>
                                                     </div>
                                                 </div>
                                             </a>
