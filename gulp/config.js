@@ -1,4 +1,5 @@
 var src = './assets';
+var outputPath = './public';
 var prefix = 'nva';
 module.exports = {
     sass: {
@@ -6,7 +7,7 @@ module.exports = {
             src + '/sass'
         ],
         outputName: prefix + '-styles.css',
-        dest: './css'
+        dest: outputPath + './css'
     },
 
     js: {
@@ -14,13 +15,13 @@ module.exports = {
             src + '/js'
         ],
         outputName: prefix + '-app.js',
-        dest: './js'
+        dest: outputPath + './js'
     },
 
     img: {
         src: [
             src + '/img'
         ],
-        dest: './images'
+        dest: outputPath + './images'
     }
 };
