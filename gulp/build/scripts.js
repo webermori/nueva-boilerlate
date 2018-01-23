@@ -18,6 +18,13 @@ gulp.task('build-scripts', function() {
 		.pipe(gulp.dest(config.dest + '/app'));
 });
 
+gulp.task('jsmin', function() {
+	gulp.src(config.src  + '/app/**/*.js')
+		.pipe(uglify())
+		.pipe(gulp.dest(config.dest + '/app'));
+});
+
+
 //Vendor generate
 gulp.task('build-js-vendor', function() {
 	return gulp.src([
@@ -47,5 +54,5 @@ gulp.task('clone-js-lib', function() {
 		'./node_modules/gmap3/dist/gmap3.min.js',
 		'./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js'
 	])
-	.pipe(gulp.dest('js/lib/'));
+	.pipe(gulp.dest(config.dest + '/lib/'));
 });
