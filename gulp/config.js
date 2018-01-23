@@ -1,27 +1,28 @@
-var src = './assets';
+var entryPath = './src/assets';
 var outputPath = './public';
 var prefix = 'nva';
+
 module.exports = {
     sass: {
         src: [
-            src + '/sass'
+            entryPath + '/sass'
         ],
         outputName: prefix + '-styles.css',
-        dest: outputPath + './css'
+        dest: outputPath + '/css'
     },
 
     js: {
         src: [
-            src + '/js'
+            entryPath + '/js'
         ],
         outputName: prefix + '-app.js',
-        dest: outputPath + './js'
+        dest: outputPath + '/js'
     },
 
     img: {
         src: [
-            src + '/img'
+            entryPath + '/img'
         ],
-        dest: outputPath + './images'
+        dest: outputPath + '/images'
     }
 };
