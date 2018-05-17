@@ -66,3 +66,5 @@
 <div class="hidden-xs-up">
     <?php echo file_get_contents("images/svg-sprite/symbol/svg/sprite.symbol.svg") ?>
 </div>
+
+<script src="js/nva-bundle.js"></script>

@@ -5,19 +5,19 @@ var gulp = require('gulp'),
 	config = require('../config').sass,
 	header = require('gulp-header'),
 	pkg = require('../../package.json'),
-	banner = ['/************************************************************',
+	comment = ['/************************************************************',
 		' * <%= pkg.name %> - <%= pkg.author %>',
 		' * <%= new Date() %>',
 		' ************************************************************/',
 		''
 	].join('\n');
 
-gulp.task('css-prod', function() {
+gulp.task('css-deploy', function() {
   return gulp.src(config.dest + '/*.css')
     .pipe(cleanCSS())
     .pipe(stripCssComments({preserve: false}))
-    .pipe(header(banner, {
+    .pipe(header(comment, {
 		pkg: pkg
 	}))
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest('./dist/css'));
 });

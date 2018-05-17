@@ -3,13 +3,15 @@ var gulp = require('gulp'),
 	nodeBourbon = require('node-bourbon').includePaths,
 	nodeNeat = require('node-neat').includePaths,
 	autoprefixer = require('gulp-autoprefixer'),
+	concatCss = require('gulp-concat-css'),
+	cleanCSS = require('gulp-clean-css'),
 	sourcemaps = require('gulp-sourcemaps'),
 	rename = require('gulp-rename'),
 	livereload = require('gulp-livereload'),
 	runSequence = require('run-sequence'),
 	config = require('../config').sass,
-	sassLint = require('gulp-sass-lint');
-
+	sassLint = require('gulp-sass-lint'),
+	nuevaVar = require('../config');
 
 //Compila o SASS
 gulp.task('sass', function() {
@@ -26,6 +28,18 @@ gulp.task('sass', function() {
 		.pipe(sourcemaps.write('../maps'))
 		.pipe(gulp.dest(config.dest))
 		.pipe(livereload());
+});
+
+gulp.task('css-vendor', function() {
+	return gulp.src([
+		//'./node_modules/lightslider/dist/css/lightslider.min.css'
+	])
+	.pipe(concatCss("vendor.css"))
+	.pipe(rename({
+		prefix: nuevaVar.prefix + "-",
+	}))
+	//.pipe(cleanCSS())
+	.pipe(gulp.dest(config.dest))
 });
 
 gulp.task('sass-lint', function() {

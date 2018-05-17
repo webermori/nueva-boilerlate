@@ -1,3 +1,63 @@
+let sidebar = require('../../../bower_components/semantic/dist/components/sidebar');
+
+function getHeaderSticky() {
+	let sticky = require('../vendors/jquery.sticky');
+	$("#js-headerSticky").sticky({
+		topSpacing: 0
+	});
+}
+
+function smoothScroll() {
+	let smoothScroll = require('jquery-smooth-scroll');
+
+	$('#anchor-products').smoothScroll({
+		offset: -145
+	});
+
+	$('#anchor-company').smoothScroll({
+		offset: -90
+	});
+
+	$('#anchor-contact').smoothScroll({
+		offset: -30
+	});
+
+	$('.js-smoothScroll').smoothScroll({
+		offset: -50
+	});
+}
+
+function sidebarMenu() {
+	$('.js-triggerSidebar').on('click', function() {
+		$('.ui.sidebar').sidebar('toggle');
+	});
+
+	$('.side-nav').on('click', '.js-link', function(){
+		$('.ui.sidebar').sidebar('toggle');
+	});
+
+	// require(['navAccordion'], function(){
+	// 	jQuery('.menu-mobile').navAccordion({
+	// 		expandButtonText: '<span>+</span>',  //Text inside of buttons can be HTML
+	// 		collapseButtonText: '<span>-</span>'
+	// 	});
+	// });
+
+}
+
+function link() {
+	$('.js-link').on('click', function(){
+        $(this).parent().siblings().children().removeClass('is-active');
+        $(this).addClass('is-active');
+    });
+}
+
+function showRecaptcha() {
+	$('.wpcf7-textarea').focus(function() {
+		$('.form-recaptcha-container').css('opacity', '1').css('display', 'block');
+	});
+}
+
 function headerSticky() {
 	require(['sticky'], function(){
 		$("#js-headerSticky").sticky();
@@ -41,8 +101,8 @@ function clientsCarousel() {
 		  ]
 		});
 	});
-	console.log('cliente carousel');
 }
+
 function superFishMenu() {
 	require(['hoverIntent', 'superFish'], function(){
 		$('.main-menu').superfish();
@@ -338,4 +398,12 @@ function buscaCep() {
             limpa_formulário_cep();
         }
     });
+}
+
+module.exports = {  
+    headerSticky: getHeaderSticky(),
+    getSmoothScroll: smoothScroll(),
+    sidebarMenu: sidebarMenu(),
+    link: link(),
+    showRecaptcha: showRecaptcha()
 }

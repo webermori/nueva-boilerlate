@@ -7,7 +7,6 @@
     <meta name="description" content="<?php echo SITE_DESCRIPTION ?>">
     <meta name="author" content="http://www.agencianueva.com.br">
 
-    <!-- Facebook Open Graph META Tags -->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="<?php echo SITE_URL ?>">
     <meta property="og:title" content="<?php echo SITE_TITLE ?>">
@@ -15,12 +14,11 @@
     <meta property="og:site_name" content="<?php echo SITE_NAME ?>">
     <meta property="og:description" content="<?php echo SITE_DESCRIPTION ?>">
     <meta property="og:type" content="website">
-    <!-- .end Facebook Open Graph META Tags -->
 
      <script type="application/ld+json">
         {
           "@context": "http://schema.org",
-          "@type": "Person",
+          "@type": "Organization",
           "name": "<?php echo SITE_NAME ?>",
           "url": "<?php echo SITE_URL ?>",
           "telephone": "(<?php echo SITE_TEL_DDD ?>) <?php echo SITE_TEL_NUM ?>",
@@ -47,7 +45,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo BASEPATH ?>css/<?php echo SITE_PREFIX ?>-styles.css?v=<?php echo CSS_VERSION ?>">
-    <script data-main="js/app/main" src="js/vendor/require.js"></script>
     <!--[if lt IE 8]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/modernizr.js"><\/script>')</script>

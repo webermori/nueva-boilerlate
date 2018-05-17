@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     clean = require('gulp-clean'),
+    prefix = require('../config').prefix,
     pathCss = require('../config').sass,
     pathJs = require('../config').js;
     pathImg = require('../config').img;
@@ -7,7 +8,7 @@ var gulp = require('gulp'),
 /*----------  Styles  ----------*/
 
 gulp.task('clean-css', function() {
-	return gulp.src(pathCss.dest + '/*.css')
+	return gulp.src(pathCss.dest + '/'+ prefix +'-styles.css')
 		.pipe(clean());
 });
 
